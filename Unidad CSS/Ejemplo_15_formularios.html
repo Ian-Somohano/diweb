@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <!-- Vamos a añadir fontaweson -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+    <style>
+        @font-face {
+            font-family: Lato;
+            src: url(Lato/Lato-Regular.ttf);
+        }
+
+        /* Formateo de la pagina */
+        body {
+            font-family: "Lato", "Open Sans", roboto;
+            font-weight: 200;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        form {
+            width: 100%;
+            height: 50vh;
+            margin: auto;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px gray;
+            width: 40%;
+            height: 320px;
+            float: left;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+
+        legend {
+            font-size: 15px;
+            font-weight: bold;
+            margin: auto;
+            color: #333;
+        }
+
+        section {
+            position: relative;
+            margin-bottom: 10px;
+            height: fit-content;
+        }
+
+        label {
+            position: absolute;
+            top: 20%;
+            left: 10px;
+        }
+
+        label[for="nacimiento"] {
+            left: 150px;
+        }
+
+        input:not([type="radio"]):not([type="submit"]):not([type="reset"]) {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        input:not([type="radio"]):not([type="submit"]):not([type="reset"]):focus {
+            border-color: aqua;
+            background-color: beige;
+            outline: none;
+        }
+
+        input[type="radio"] {
+            margin: 0 auto;
+        }
+
+        
+        /* input[type="submit"],
+        input[type="reset"] {
+            clear: both;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            background-color: rgb(36, 113, 255);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        } */
+
+        i {
+            margin-right: 20px;
+        }
+
+        input[type="radio"]:hover {
+            transform: scale(2);
+        }
+
+        i:hover {
+            transform: rotate(30deg);
+        }
+
+        /* section[aria-label="crear"] label:hover,
+        section[aria-label="usar"] label:hover {
+            transform: skew(5deg, 5deg);
+        } */
+
+        section[aria-label="crear"],
+        section[aria-label="usar"] {
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        /* Aplicamos transiciones a los label */
+
+        label{
+            transform: translateY(-80%);
+            transition: all 0.5s ease;
+            pointer-events: none;
+        }
+
+        input:focus+label{
+            top: 0;
+            font-size: 12px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <section aria-label="Nombre">
+                <input type="text" name="nombre" id="nombre"> <br>
+                <label for="nombre">Nombre</label> <br>
+            </section>
+
+            <section aria-label="Apellidos">
+                <input type="text" name="apellidos" id="apellidos"> <br>
+                <label for="apellidos">Apellidos (opcional)</label> <br>
+            </section>
+
+            <section aria-label="Nacimiento">
+                <input type="date" name="nacimiento" id="nacimiento"> <br>
+                <label for="nacimiento">Fecha de nacimiento</label><br>
+            </section>
+
+            <section aria-label="Genero">
+                <label for="genero">Genero</label> <br>
+                <select name="genero" id="genero">
+                    <option selected disabled>Seleccionar</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="noquiero">Prefiero no decirlo</option>
+                </select>
+            </section>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Opciones de Cuenta</legend>
+
+            <section aria-label="crear">
+                <label for="crear">
+                    <i class="fa-solid fa-m"></i>
+                    Crear una dirección de Gmail
+                </label>
+                <input type="radio" name="usar" id="crear" value="crear"> <br>
+            </section>
+
+            <section aria-label="usar">
+                <label for="tuemail">
+                    <i class="fa-solid fa-envelope"></i>
+                    Usar tu dirección de correo electónico
+                </label>
+                <input type="radio" name="usar" id="tuemail" value="usar">
+            </section>
+
+            <hr>
+
+            <section aria-label="Usuario">
+                <input type="text" name="usuario" id="usuario"> <br>
+                <label for="usuario">Usuario</label> <br>
+
+            </section>
+
+
+            <section aria-label="Contraseña">
+                <input type="password" name="contraseña" id="contraseña"> <br>
+                <label for="contraseña">Contraseña</label> <br>
+
+            </section>
+
+            <section aria-label="ConfirmarContraseña">
+                <input type="password" name="contraseña2" id="contraseña2">
+                <label for="contraseña2">Repetir Contraseña</label> <br>
+
+            </section>
+        </fieldset>
+
+            <input type="submit" value="Crear Cuenta">
+            <input type="reset" value="Borrar Datos">
+    </form>
+</body>
+
+</html>

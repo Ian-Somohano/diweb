@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Basicos</title>
+    <link rel="stylesheet" href="../CSS/Ejemplo_01.css">
+    <style>
+        /* Formateo de la pagina */
+        * {
+            font-size: 20px;
+            font-family: Arial;
+        }
+
+        /* Selector base */
+        span a {
+            background-color: aquamarine;
+        }
+
+        /* Selector descendente */
+
+        p span a {
+            background-color: #fa8072;
+        }
+
+        p>a {
+            font-weight: bolder;
+        }
+
+        /* Selector hermano  */
+
+        span+a {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Parrafo 1</p>
+
+    <p>Parrafo 2</p>
+
+    <p>Parrafo 3 con enlace
+
+        <a href="#">enlace</a>
+    </p>
+
+    <p>Parrafo 4
+        <span>con
+            <a href="#">enlace</a>
+        </span>
+    </p>
+
+    <p>Parrafo 5
+        <span>con</span>
+        <a href="#">enlace</a>
+    </p>
+
+</body>
+
+</html>

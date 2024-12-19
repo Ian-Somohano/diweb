@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        /* static : normal
+           relative : relativo a la posicion static(la posición normal)
+           absolute: respecto a cu contenedor/elemento padre
+           sticky: se queda pegado al hacer scroll
+        */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            line-height: 1em;
+            position: relative;
+        }
+
+        h1 {
+            margin: 30px;
+        }
+
+        nav {
+            position: sticky;
+            top: -1px;
+            z-index: 10;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px 0px;
+            background-color: rgb(46, 46, 46);
+            height: 2em;
+
+        }
+
+        li {
+            align-content: center;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: white;
+        }
+
+        main {
+            width: 50%;
+            background-color: rgb(255, 255, 159);
+            position: relative;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        section:first-of-type {
+            background-color: rgb(255, 91, 255);
+            position: static;
+        }
+
+        section:nth-of-type(2) {
+            background-color: darkseagreen;
+            position: relative;
+            left: 80px;
+            top: 5px;
+        }
+
+        section:nth-of-type(3) {
+            background-color: salmon;
+            position: absolute;
+            top: 30px;
+            left: 400px;
+        }
+
+        section:nth-of-type(4) {
+            background-color: cornflowerblue;
+            position: sticky;
+            top: 100px;
+        }
+
+        p {
+            color: transparent;
+        }
+
+        button{
+            background-color: rgb(195, 253, 255);
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            border: 1px solid rgb(51, 51, 51);
+            position: fixed;
+            left: 80%;
+            top: 80%;
+            z-index: 100;
+            font-weight: bolder;
+        }
+
+        button:hover {
+            background-color: rgb(123, 241, 246);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Posicionamiento</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Enlace 1</a>
+            </li>
+            <li>
+                <a href="">Enlace 2</a>
+            </li>
+            <li>
+                <a href="">Enlace 3</a>
+            </li>
+            <li>
+                <a href="">Enlace 4</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Static</h2>
+            <article>
+                El elemento es posicionado de acuerdo al flujo normal del documento. Las propiedades top, right, bottom,
+                left, and z-index no tienen efecto. Este es el valor por defecto.
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Relative</h2>
+            <article>
+                El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación
+                a sí mismo, con base en los valores de top, right, bottom, and left.
+            </article>
+        </section>
+
+        <section>
+            <h2>Absolute</h2>
+            <article>
+                El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en
+                el esquema de la página.
+            </article>
+        </section>
+
+        <section>
+            <h2>Sticky</h2>
+            <article>
+                El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación
+                a su ancestro que se desplace más cercano y su bloque contenedor (ancestro en nivel de bloque más
+                cercano) incluyendo elementos relacionados a tablas, basados en los valores de top, right, bottom, y
+                left. El desplazamiento no afecta la posición de ningún otro elmento.
+            </article>
+        </section>
+
+        <section>
+            <h2>Fixed</h2>
+            <article>
+                El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación
+                a su ancestro que se desplace más cercano y su bloque contenedor (ancestro en nivel de bloque más
+                cercano) incluyendo elementos relacionados a tablas, basados en los valores de top, right, bottom, y
+                left. El desplazamiento no afecta la posición de ningún otro elmento.
+            </article>
+        </section>
+        <hr>
+        <!-- Relleno -->
+        <section>
+            <h2>Relleno</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam nam provident quis doloremque
+                laboriosam itaque? Magnam nulla, mollitia natus laboriosam ut aliquid! Voluptas sequi quibusdam eligendi
+                quia obcaecati dolorem?</p>
+        </section>
+    </main>
+
+    <button>Arriba</button>
+</body>
+
+</html>

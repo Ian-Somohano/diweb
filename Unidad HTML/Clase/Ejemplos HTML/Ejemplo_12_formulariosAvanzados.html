@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Avanzados</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7px;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 1px solid gray;
+            height: 1.4rem;
+            padding-left: 1rem;
+        }
+
+        button {
+            background-color: rgb(19, 19, 19);
+            border-radius: 15px;
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+            height: 2rem;
+            width: 100px;
+        }
+
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- El # en el action indica que el formulario se carga en la misma pagina -->
+    <form action="#" method="get" autocomplete="off">
+        <label for="buscar">Buscar</label>
+        <input type="search" name="buscar" id="buscar">
+        <br>
+
+        <label for="">Introduce tu edad</label>
+        <input type="number" name="" id="" min="14" max="99" step="1">
+        <br>
+
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" required="required" autocomplete placeholder="Escribe tu Correo">
+        <br>
+
+        <label for="telf">Teléfono</label>
+        <input name="telf" id="telf" type="tel">
+        <br>
+
+        <label for="price">Precio</label>
+        <input type="range" name="price" id="price">
+        <br>
+
+        <label for="url">Comparte tu web</label>
+        <input type="url" id="url" name="url">
+        <br>
+
+        <label for="color">Selecciona un color</label>
+        <input type="color" name="color" id="color" >
+        <br>
+
+        <label for="cita">Eligue una fecha</label>
+        <input type="date" name="cita" id="cita">
+        <br>
+                
+        <hr>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

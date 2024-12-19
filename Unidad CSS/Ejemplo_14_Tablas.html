@@ -1,0 +1,52 @@
+<!-- Ejemplo_14_Tablas.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table {
+            border: 2px solid blue;
+            border-collapse: separate; /* Probar collapse*/
+            border-spacing: 10px;
+            empty-cells: hide;
+            caption-side: bottom;
+        }
+
+        td {
+            border: 2px dashed red;
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <table>
+        <caption>Titulo de tabla</caption>
+        <tr>
+            <th>Cabecera1</th>
+            <th>Cabecera2</th>
+            <th>Cabecera3</th>
+            <th>Cabecera4</th>
+        </tr>
+        <tr>
+            <td>Celda1</td>
+            <td>Celda2</td>
+            <td></td>
+            <td>Celda4</td>
+        </tr>
+        <tr>
+            <td>Celda1</td>
+            <td>Celda2</td>
+            <td></td>
+            <td>Celda4</td>
+        </tr>
+        <tr>
+            <td>Celda1</td>
+            <td>Celda2</td>
+            <td>Celda3</td>
+            <td>Celda4</td>
+        </tr>
+    </table>
+ </body>
+ </html>

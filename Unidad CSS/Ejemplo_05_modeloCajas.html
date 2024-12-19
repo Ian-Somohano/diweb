@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Cajas</title>
+    <style>
+        #linea_pija {
+            width: 80%;
+        }
+
+        hr {
+            display: inline;
+            width: 100%;
+        }
+ 
+        #linea_pija hr:first-of-type {
+            width: 20%;
+        }
+
+        /*Primero de su clase -- tambien tenemos:last of type  */
+        p:first-of-type {
+            background-color: rgb(222, 249, 158);
+            margin-bottom: 20px; /*margen inferior*/
+            margin: 10px;
+            width: 50%;
+            height: 60px;
+        }
+
+        /* Ordinal: elegimos el elemento de su tipo con el numero (2) */
+        p:nth-of-type(2){
+            border: 2px solid magenta;
+            padding: 10px;
+        }
+
+        a {
+            background: khaki;
+            padding: 50px 10px 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <section id="linea_pija">
+        <hr>
+        <hr>
+    </section>
+
+    <p>Esto es un párrafo</p>
+
+    <p>Otro párrafo con un <a href="#">Enlace</a></p>
+</body>
+</html>

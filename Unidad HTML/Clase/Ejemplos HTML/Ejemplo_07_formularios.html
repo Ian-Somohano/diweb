@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        html {
+            background-color: whitesmoke;
+        }
+
+        .container {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            align-items: center;
+            gap: 12px;
+        }
+
+        input {
+            border: 1px solid gray;
+            border-radius: 13px;
+            height: 1.6rem;
+            width: 300px;
+            box-shadow: 2px 3px 5px 1px rgb(158, 158, 158);
+            text-align: center;
+        }
+
+        label {
+            font-size: larger;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        button {
+            width: 150px;
+            padding: 5px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 13px;
+            background-color: rgb(0, 102, 255);
+            color: white;
+            font-weight: 900;
+            box-shadow: 2px 3px 5px 1px rgb(158, 158, 158);
+        }
+
+        button:hover {
+            background-color: rgb(69, 168, 255);
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ejemplo de Formulario -->
+    <div class="container">
+        <h2 style="font-family: r; color: rgb(58, 111, 255);">REGISTRO</h2>
+        <form action="#">
+
+            <label for="nombre">Nombre</label> 
+            <input placeholder="¿Como quieres que te llamemos?" name="nombre" type="text">
+
+            <label for="">Correo</label>
+            <input placeholder="Escribe tu mejor correo" type="email" name="correo" id="">
+
+            <label for="contraseña">Contraseña</label>
+            <input placeholder="Elige una buena contraseña" type="password" name="contraseña" id="contraseña">
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

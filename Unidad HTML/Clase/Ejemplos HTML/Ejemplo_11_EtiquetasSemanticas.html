@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabdora ES</title>
+</head>
+
+<!-- Etiquetas semanticas:
+        Header -> cabecera
+        nav -> navegacion
+        Article -> articulo
+        section -> seccion
+        Footer -> pie
+        figure -> ficura (icono/imagen)
+        figcaption -> pie de foto
+        main -> principal
+        aside -> lateral
+        video
+        audio
+        details (sección ocultable)
+            - summary (resumen details)
+        address -> dirección
+        time -> fecha y/o hora
+-->
+
+<body>
+    <header>
+        <!-- El aria-label sutituye al titulo en los section y en los article -->
+        <section aria-label="logo">
+            <!-- <h2>&nbsp;</h2> -->
+            <figure>
+                <img src="#" alt="#">
+                <figcaption>Esto es el logo</figcaption>
+            </figure>
+
+        </section>
+
+        <section aria-label="buscador">
+
+            <form action="#" method="get">
+                <label for="#">Buscar</label>
+                <input id="#" type="text">
+            </form>
+
+            <figure>
+                <a href="#">
+                    <img src="#" alt="favoritos">
+                </a>
+                <a href="#">
+                    <img src="#" alt="hubicación">
+                </a>
+                <a href="#">
+                    <img src="#" alt="perfil">
+                </a>
+                <a href="#">
+                    <img src="#" alt="carrito">
+                </a>
+            </figure>
+        </section>
+        <hr>
+
+        <nav>
+            <a href="#">BLACK FRIDAY</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-label="banner">
+            <img src="#" alt="banner">
+            <details>
+                <summary>BLACK FRIDAY</summary>
+                <p>Rebajas 20%</p>
+                <a href="#">Comprar</a>
+            </details>
+        </section>
+
+        <section aria-label="productos">
+            <table>
+                <tr>
+                    <td>
+                        <article>
+                            <a href="">
+                                <figure>
+                                    <img src="#" alt="#">
+                                    <figcaption>Pie de foto</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <a href="">
+                                <figure>
+                                    <img src="#" alt="#">
+                                    <figcaption>Pie de foto</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <a href="">
+                                <figure>
+                                    <img src="#" alt="#">
+                                    <figcaption>Pie de foto</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <a href="">
+                                <figure>
+                                    <img src="#" alt="#">
+                                    <figcaption>Pie de foto</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <a href="">
+                                <figure>
+                                    <img src="#" alt="#">
+                                    <figcaption>Pie de foto</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <a href="">
+                                <figure>
+                                    <img src="#" alt="#">
+                                    <figcaption>Pie de foto</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>

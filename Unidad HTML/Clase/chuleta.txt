@@ -1,0 +1,38 @@
+
+- [2] <code> -> Código o texto plano
+- [2] <blockquote> / <cite> -> Citas o frases
+- [3] <strong> -> Negrita
+    ej: <span><em><strong>Hola Julio</strong></em></span>
+- [3] <ins> -> Subrayado
+- [3] <del> -> Tachado
+- [3] <sup> -> Superindice
+- [3] <sub> -> Subindice 
+- [3] <abbr> / <acronym> -> Abreviaturas (ONU)
+
+
+IMÁGENES
+- [2] <map> -> Define mapa de imagen
+- [3] <area> -> Área geométrica (circle, rect, polygon)
+
+- [3] <caption> -> Titulo de tabla
+
+- rowspan -> Fusión por filas
+- colspan -> Fusión por columnas
+
+FORMULARIOS
+- [2] <form> -> Formulario (get|post->Encriptado)
+- [3] <input> -> Campo de formulario
+    Type: text, password, radio, checkbox, submit 
+    Avanzados: email, number, range, color, date
+- [3] <fieldset> -> Recuadro sobre parte del form
+- [4] <legend> -> Titulo del fieldset 
+
+- [3] <textarea> -> Area de texto (rows|cols)
+- [3] <select> -> Lista desplegable
+- [4] <option> -> opción de la lista
+- [4] <optgroup> -> Agrupación de opciones
+
+- [2] <address> -> Dirección
+- [2] <figure> -> Figura
+- [2] <figcaption> -> Pie de foto
+- [2] <time> -> Día y hora

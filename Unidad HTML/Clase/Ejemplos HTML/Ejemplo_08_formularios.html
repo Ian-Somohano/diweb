@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="grabaform.php" method="get">
+
+        <label for="modelo">Modelo móvil</label>
+        <br>
+        <input type="text" name="modelo" id="modelo">
+
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea name="comentario" id="comentario" rows="10" cols="30"></textarea>
+
+        <input type="submit" value="Enviar">
+        <hr>
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <input type="radio" name="sexo" id="hombre" value="hombre">
+        <label for="hombre">Hombre</label>
+        <br>
+        <input type="radio" name="sexo" id="otro" value="otro" checked>
+        <label for="otro">Otro</label>
+        <br>
+        <hr>
+        <p>Curso:</p>
+        <input type="checkbox" name="cursos[]" id="html" value="html">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" name="cursos[]" id="css" value="no">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" name="cursos[]" id="js" value="js">
+        <label for="js">JS</label>
+        <hr>
+        <p>Elige ciudad:</p>
+        <select name="ciudad" id="ciudad">
+            <option value="sevilla">Sevilla</option>
+            <option value="madrid">Madrid</option>
+            <option value="dos_hermanas">Dos Hermanas</option>
+        </select>
+    </form>
+</body>
+
+</html>

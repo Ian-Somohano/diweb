@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una cuenta</title>
+    <style>
+        * {
+            margin: 10px;
+        }
+
+        span{
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+        label{
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        input {
+            width: 250px;
+            font-size: 0.8rem;
+            padding: 5px;
+        }
+
+        button {
+            font-size: 0.7rem;
+            font-weight: bolder;
+            background-color: #3366cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 3px;
+            align-items: center;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crear cuenta</h1>
+
+    <section aria-label="">
+
+    </section>
+    <form method="post" action="#">
+        <label for="usuario">Usuario</label>
+        <br>
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu nombre de usuario" required>
+        <br>
+
+        <label for="contraseña">Contraseña</label>
+        <br>
+        <input type="password" name="contraseña" id="contraseña" placeholder="Escribe una contraseña" required>
+        <br>
+        <span>Se recomienda emplear una contraseña única que no utilices en ningún otro sitio web.</span>
+        <br>
+
+        <label for="contraseña_confirm">Confirmar la contraseña</label>
+        <br>
+        <input type="password" name="contraseña_confirm" id="contraseña_confirm" placeholder="Introduce de nuevo la contraseña">
+        <br>
+
+        <label for="correo">Dirección de correo electrónico (recomendado)</label>
+        <br>
+        <input type="email" name="correo" id="correo" placeholder="Escribe tu dirección de correo electrónico">
+        <br>
+        <span>Se requiere un correo electrónico para recuperar tu cuenta si pierdes tu contraseña.</span>
+        <br>
+
+        <button type="submit">Crea tu cuenta</button>
+    </form>
+</body>
+</html>

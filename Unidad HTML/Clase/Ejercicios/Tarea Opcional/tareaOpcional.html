@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bases de datos relaciones - Wikipedia</title>
+    <link rel="shortcut icon" href="wikipedia.png" type="image/x-icon">
+    <style>
+      table * {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="crearCuenta.html">Crear cuenta</a>
+    
+    <aside>
+       <!-- Barra lateral de contenido -->
+      <span>Contenido</span>
+      <button>Ocultar</button>
+      <ul>
+        <li>
+          <a href="#inicio">Inicio</a>
+        </li>
+
+        <li>
+          <a href="#caracteristicas_comunes">Características comunes</a>
+        </li>
+
+        <li>
+          <details>
+            <summary>
+              <a href="">Elementos</a>
+            </summary>
+
+            <ul>
+              <li>
+                <a href="">Relaciones (características en común)</a>
+
+                <ul>
+                  <li>
+                    <a href="">Relaciones base</a>
+                  </li>
+
+                  <li>
+                    <a href="">Relaciones derivadas</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="">Dominios</a>
+              </li>
+              <li>
+                <a href="">Clasificación de Claves</a>
+
+                <ul>
+                  <li>
+                    <a href="">Clave primaria</a>
+                  </li>
+                  <li>
+                    <a href="">Clave externa o foránea</a>
+                  </li>
+                  <li>
+                    <a href="">Clave índice</a>
+                  </li>
+
+                  <li>
+                    <a href="">Procedimientos almacenados</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <a href="#estructura_y_definiciones">Estructura y definiciones</a>
+        </li>
+
+        <li>
+          <a href="">Manipulación de la información</a>
+        </li>
+
+        <li>
+          <a href="">Gestores de base de datos relacionales</a>
+        </li>
+
+        <li>
+          <a href="">Ventajas y desventajas</a>
+        </li>
+
+        <li>
+          <a href="">Diseño de las bases de datos relacionales</a>
+        </li>
+
+        <li>
+          <a href="">Véase también</a>
+        </li>
+
+        <li>
+          <a href="">Referencias</a>
+        </li>
+
+        <li>
+          <a href="">Enlaces externos</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h1>Base de datos relacional</h1>
+      <hr>
+
+      <!-- Primeros 2 párrafos -->
+      <section aria-label="inicio" id="inicio">
+        <p>
+          La <strong>base de datos relacional</strong> (BDR) es un tipo de
+          <a href="https://es.wikipedia.org/wiki/Base_de_datos">base de datos</a> (BD) que cumple con el
+          <a href="https://es.wikipedia.org/wiki/Modelo_relacional">modelo relacional</a> (el modelo más utilizado actualmente
+          para implementar las BD ya planificadas). Tras ser postuladas sus
+          bases en 1970 por <a href="https://es.wikipedia.org/wiki/Edgar_Frank_Codd"> Edgar Frank Codd,</a
+          ><sup><a href="">1</a></sup> de los laboratorios IBM en San José
+          (California), no tardó en consolidarse como un nuevo paradigma en los
+          modelos de base de datos.<sup><a href="">2</a></sup>
+        </p>
+
+        <p>
+          Un sistema de software utilizado para mantener las bases de datos
+          relacionales es un relational database management system (RDBMS) o
+          sistema de gestión de bases de datos relacionales. Virtualmente, todos
+          los sistemas de bases de datos relacionales utilizan SQL (Structured
+          Query Language) para consultar y mantener la base de datos.
+        </p>
+      </section>
+
+      <!-- Características comunes (lista) -->
+      <section id="caracteristicas_comunes">
+        <h2>Características comunes</h2>
+        <hr>
+        <ul>
+          <li>
+            Una base de datos se compone de varias tablas, denominadas
+            relaciones.
+          </li>
+
+          <li>No pueden existir dos tablas con el mismo nombre ni registro.</li>
+
+          <li>
+            Cada tabla es a su vez un conjunto de campos (columnas) y registros
+            (filas).
+          </li>
+
+          <li>
+            La relación entre una tabla padre y un hijo se lleva a cabo por
+            medio de las llaves primarias y llaves foráneas (o ajenas).
+          </li>
+
+          <li>
+            Las llaves primarias son la clave principal de un registro dentro de
+            una tabla y estas deben cumplir con la integridad de datos.
+          </li>
+
+          <li>
+            Las llaves ajenas se colocan en la tabla hija, contienen el mismo
+            valor que la llave primaria del registro padre; por medio de estas
+            se hacen las formas relacionales.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Estructura y definiciones (tabla) -->
+      <section id="estructura_y_definiciones">
+        <h2>Estructura y definiciones</h2>
+        <hr>
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Término SQL</th>
+              <th>Término de bases de datos relacionales</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td rowspan="2">Fila y Columna</td>
+              <td>Tupla o registro</td>
+              <td>Un conjunto de datos, que representa un ítem simple</td>
+            </tr>
+            <tr>
+              <td>Atributo o campo</td>
+              <td>
+                Un elemento etiquetado de una tupla, p.e. "Dirección" o "Fecha
+                de nacimiento"
+              </td>
+            </tr>
+            <tr>
+              <td>Tabla</td>
+              <td>Relación o Base relvar</td>
+              <td>
+                Un conjunto de tuplas compartiendo los mismos atributos; un
+                conjunto de filas y columnas.
+              </td>
+            </tr>
+            <tr>
+              <td>Vista o conjunto de resultados</td>
+              <td>Relvar derivado</td>
+              <td>
+                Cualquier conjunto de tuplas; un reporte o informe de datos de
+                una RDBMS en respuesta a una consulta
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

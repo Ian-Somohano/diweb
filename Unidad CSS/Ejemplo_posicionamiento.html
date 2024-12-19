@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        /* static : normal
+           relative : relativo a la posicion static(la posición normal)
+           absolute: respecto a cu contenedor/elemento padre
+           sticky: se queda pegado al hacer scroll
+        */
+
+        p{
+            background-color: gray;
+            color: black;
+            font-weight: bolder;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            align-content: center;
+        }
+
+        #estatic {
+            position: static;
+        }
+
+        #rela {
+            position: relative;
+            left: 200px;
+        }
+
+        #absolute {
+            position: absolute;
+            z-index: 0;
+            top: 10px;
+            right: 100px;
+            background-color: rgb(255, 92, 92);
+            
+        }
+
+        #sticky {
+            position: sticky;
+            z-index: 10;
+            top: 100px;
+            background-color: rgba(221, 255, 0, 0.353);
+        }
+
+        #fixed {
+            position: fixed;
+            background-color: rgb(97, 97, 255);
+        }
+
+        .container {
+            background-color: beige;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <p id="fixed">Fixed</p>
+    <p id="estatic">Estatic</p>
+    <p id="rela">Relative</p>
+    <p id="absolute">Absolute</p>
+    <p id="sticky">Sticky</p>
+    <div class="container"></div>
+
+    <script src="prueba.js"></script>
+</body>
+</html>

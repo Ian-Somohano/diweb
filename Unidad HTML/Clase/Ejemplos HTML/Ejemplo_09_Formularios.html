@@ -1,0 +1,48 @@
+<!--Ejemplo_08_formulario.html-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Formularios</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Selector Cursos</legend>
+        <!-- Para los checkbox hay que mandar como 
+            variable un array, se pone los [] -->
+        <p>Cursos:</p>
+        <input type="checkbox" name="cursos[]" id="html" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" name="cursos[]" id="css" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" name="cursos[]" id="js" value="js">
+        <label for="js">JS</label><br>
+    </fieldset>
+
+
+    <!-- Selectores con grupos -->
+    <p>Elige ciudad:</p>
+    <select name="ciudades" id="ciudades">
+
+        <option disabled selected>Pon ciudad</option>
+        <option value="madrid">--Madrid</option>
+
+        <optgroup label="Andalucia">
+
+            <option value="sevilla">--Sevilla</option>
+            <option value="doshermanas">--Dos Hermanas</option>
+
+        </optgroup>
+
+    </select><br>
+    <hr>
+    <input type="submit" value="Añadir al carrito">
+    <br>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinacion vertical</title>
+    <style>
+        p {
+            width: 60%;
+            height: 100px;
+            border: 1px solid black;   
+        }
+
+        p:first-of-type span {
+            vertical-align: baseline;
+        }
+
+        p:nth-of-type(2) span {
+            vertical-align: top;
+        }
+
+        p:nth-of-type(3) span {
+            vertical-align: super;
+        }
+
+        p:last-of-type span {
+            vertical-align: 1em;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="cara-feliz.png" alt="">
+        <span>Baseline</span>
+    </p>
+
+    <p>
+        <img src="cara-feliz.png" alt="">
+        <span>Top</span>
+    </p>
+
+    <p>
+        <img src="cara-feliz.png" alt="">
+        <span>Super</span>
+    </p>
+
+    <p>
+        <img src="cara-feliz.png" alt="">
+        <span>+1em</span>
+    </p>
+</body>
+</html>
