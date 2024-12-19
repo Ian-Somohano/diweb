@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animaciones</title>
     <style>
+
         p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 40%;
             font-size: 14px;
             background-color: gray;
@@ -18,14 +20,40 @@
         }
 
         p:hover {
-            background-color: red;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease;
+            width: 80%;
+            font-size: 30px;
+            color: black;
+            background-color: yellow;
+            border-radius: 10px;
+            text-shadow: none;
         }
 
+        h1::selection {
+            color: red;
+            background-color: black;
+        }
+
+        section {
+            width: 200px;
+            height: 100px;
+        }
+
+        section:first-child {
+            background-color: red;
+            color: white;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Título de la página</h1>
     <p>Este párrafo va a transformarse</p>
 </body>
+
 
 </html>
