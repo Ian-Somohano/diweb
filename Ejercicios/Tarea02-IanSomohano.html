@@ -6,37 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Corte Inglés</title>
 
+    <style>
+        /* Formateo de la pagina */
+        body {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header */
+        header {
+            height: 15vh;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header section img {
+            width: 20px;
+        }
+
+        header form{
+            padding: 3px 0;
+            position: relative;
+            /* max-width: 800px; */
+        }
+
+
+        header section:first-of-type {
+            position: relative;
+            left: 15px;
+            text-align: center;
+            gap: 5px;
+        }
+
+        header form {
+            position: relative;
+            left: 30px;
+            width: 40%;
+            align-items: center;
+            display: flex;
+            border: 1px solid gray;
+            margin: 0 10px;
+            border-radius: 20px;
+            background-color: white;
+            padding: 5px;
+        }
+
+        form input {
+            border: none;
+            position: relative;
+        }
+
+        header form button {
+            position: absolute;
+            right: 4%;
+            border: none;
+            border-radius: 30px;
+            width: 20px;
+            padding: 2px;
+            align-items: center;
+            background-color: rgb(43, 203, 43);
+        }
+
+        header form img {
+            width: 13px;
+            width: 10px;
+            background: none;
+        }
+
+
+        header section:nth-of-type(2) {
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+            gap: 10px;
+            margin-right: 30px;
+        }
+
+        
+
+    </style>
+
 </head>
 
 <body>
     <header>
         <!-- Menu hamburguesa + logo -->
         <section aria-label="menu">
-            <img src="img/menu.png" alt="menu" width="30">
-            <img src="img/logo.png" alt="logo" width="100">
+            <img src="img/menu.png" alt="menu">
+            <img src="img/logo.png" alt="logo">
         </section>
 
-
-
         <!-- Barra de busqueda + botón de envío -->
-        <form action="#" method="get" aria-label="buscar">
+        <form action="#" method="get">
             <input id="buscar" name="buscar" type="text" placeholder="¿Qué estas buscando?">
 
             <button>
-                <img src="https://cdn-icons-png.flaticon.com/512/3721/3721746.png" alt="lupa" width="20px">
+                <img src="https://cdn-icons-png.flaticon.com/512/3721/3721746.png" alt="lupa">
             </button>
         </form>
 
         <!-- Iconos con elaces -->
         <section aria-label="iconos">
             <a href="#">
-                <img src="img/usuario.png" alt="usuario" width="30">
+                <img src="img/usuario.png" alt="usuario">
             </a>
             <a href="#">
-                <img src="img/corazon.png" alt="favoritos" width="30">
+                <img src="img/corazon.png" alt="favoritos">
             </a>
             <a href="#">
-                <img src="img/bolsa.png" alt="carrito" width="30">
+                <img src="img/bolsa.png" alt="carrito">
             </a>
         </section>
         <!-- Enlaces barra inferior del header -->      
@@ -60,6 +140,7 @@
             </li>
         </ul>
     </nav>
+
     <main>
         <!-- Tabla de categorias -->
         <h2>Categorías</h2>
@@ -67,37 +148,37 @@
             <tr>
                 <td>
                     <a href="https://www.elcorteingles.es/moda-mujer/">
-                        <img src="img/1.jpeg" width="100" alt="moda mujer">
+                        <img src="img/1.jpeg" alt="moda mujer">
                     </a>
                 </td>
 
                 <td>
                     <a href="https://www.elcorteingles.es/moda-hombre/">
-                        <img src="img/2.jpeg" width="100" alt="moda hombre">
+                        <img src="img/2.jpeg" alt="moda hombre">
                     </a>
                 </td>
 
                 <td>
                     <a href="https://www.elcorteingles.es/moda-infantil/">
-                        <img src="img/3.jpeg" width="100" alt="moda infantil">
+                        <img src="img/3.jpeg" alt="moda infantil">
                     </a>
                 </td>
 
                 <td>
                     <a href="https://www.elcorteingles.es/hogar/">
-                        <img src="img/4.jpeg" width="100" alt="hogar">
+                        <img src="img/4.jpeg" alt="hogar">
                     </a>
                 </td>
 
                 <td>
                     <a href="https://www.elcorteingles.es/deportes/">
-                        <img src="img/5.jpeg" width="100" alt="">
+                        <img src="img/5.jpeg" alt="">
                     </a>
                 </td>
 
                 <td>
                     <a href="https://www.elcorteingles.es/electronica/">
-                        <img src="img/6.jpeg" width="100" alt="">
+                        <img src="img/6.jpeg" alt="">
                     </a>
                 </td>
             </tr>
@@ -120,19 +201,19 @@
         <section aria-label="paginas-utiles">
             <ul>
                 <li>
-                    <img src="img/bolsas-de-compra.png" alt="bolsas de compra" width="30">
+                    <img src="img/bolsas-de-compra.png" alt="bolsas de compra">
                     <a href="">Recogida en tienda gratis</a>
                 </li>
                 <li>
-                    <img src="img/entrega.png" alt="coche de envio" width="30">
+                    <img src="img/entrega.png" alt="coche de envio">
                     <a href="">Envio a domicilio</a>
                 </li>
                 <li>
-                    <img src="img/caja.png" alt="caja" width="30">
+                    <img src="img/caja.png" alt="caja">
                     <a href="">Devolución gratis en tienda</a>
                 </li>
                 <li>
-                    <img src="img/maletero-abierto.png" alt="coche" width="30">
+                    <img src="img/maletero-abierto.png" alt="coche">
                     <a href="">Click & Car</a>
                 </li>
             </ul>
@@ -142,7 +223,7 @@
 
         <form action="#" method="get">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="">
+            <input type="text" name="nombre" id="nombre" placeholder="¿Cómo te llamas?">
         </form>
     </main>
 </body>
