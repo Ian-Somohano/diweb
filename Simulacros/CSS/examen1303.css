@@ -1,0 +1,147 @@
+/* GENERALES */
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+/* ------- Lateal Izquierdo ------- */
+body > aside {
+    background: linear-gradient(#ccc, #fff) ;
+    position: absolute;
+    width: 20%;
+    top: 2%;
+    left: 2%;
+}
+
+body > aside img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+aside:first-of-type ul {
+    line-height: 1.125em;
+    font-size: 0.8em;
+    margin-left: -10px;
+    color: #0645AD;
+}
+
+body > aside ul {
+    list-style: none;
+}
+
+body > aside ul li:first-child {
+    text-shadow: 1px 1px 1px blue;
+}
+
+body > aside ul li + li {
+    text-indent: 10px;
+}
+
+body > aside h3 {
+    color: #666;
+    font-weight: 1.1em;
+    margin-left: 10px;
+    font-variant: small-caps;
+}
+
+/* --------------------------------------------------- */
+/* ------- PRINCIPAL ------- */
+
+main {
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    top: 2%;
+    left: 25%;
+}
+
+main > header {
+    background: radial-gradient(ellipse at top,#ccc, white);
+}
+
+main header nav ul {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+main header nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+main header form {
+    width: 60%;
+    float: left;
+}
+/* 15 */
+main header .fa {
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+/* 16 */
+main header form input.form-control {
+    float: left;
+    width: 70%;
+    height: 30px;
+}
+/* 17 */
+main header form input[type="submit"]{
+    float: left;
+    margin-left: 5px;
+    height: 38px;
+    width: 80px;
+}
+
+/* 18 */
+main header img {
+    width: 90%;
+}
+/* 19 */
+main header img:hover {
+    visibility: hidden;
+}
+/* --------------------------------------------------- */
+/* ------- SECCIÓN PRINCIPAL ------- */
+
+/* 20 */
+main section {
+    width: 60%;
+    float: left;
+}
+
+/* 21 */
+main aside {
+    width: 35%;
+    float: left;
+}
+
+/* 22 */
+main p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    padding-right: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+
+/* --------------------------------------------------- */
+/* ------- LISTA MAIN ------- */
+
+/* 23 */
+
+
+/* --------------------------------------------------- */
+/* ------- TABLA MAIN ------- */
+
+/* --------------------------------------------------- */
+/* ------- TABLA LATERAL --------*/
+
+/* --------------------------------------------------- */
+/* ------- PIE DE PÁGINA --------*/
+
