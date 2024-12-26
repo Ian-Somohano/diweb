@@ -7,15 +7,15 @@ body {
 
 
 /* ------- Lateal Izquierdo ------- */
-body > aside {
-    background: linear-gradient(#ccc, #fff) ;
+body>aside {
+    background: linear-gradient(#ccc, #fff);
     position: absolute;
     width: 20%;
     top: 2%;
     left: 2%;
 }
 
-body > aside img {
+body>aside img {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -27,19 +27,19 @@ aside:first-of-type ul {
     color: #0645AD;
 }
 
-body > aside ul {
+body>aside ul {
     list-style: none;
 }
 
-body > aside ul li:first-child {
+body>aside ul li:first-child {
     text-shadow: 1px 1px 1px blue;
 }
 
-body > aside ul li + li {
+body>aside ul li+li {
     text-indent: 10px;
 }
 
-body > aside h3 {
+body>aside h3 {
     color: #666;
     font-weight: 1.1em;
     margin-left: 10px;
@@ -57,8 +57,8 @@ main {
     left: 25%;
 }
 
-main > header {
-    background: radial-gradient(ellipse at top,#ccc, white);
+main>header {
+    background: radial-gradient(ellipse at top, #ccc, white);
 }
 
 main header nav ul {
@@ -76,20 +76,23 @@ main header form {
     width: 60%;
     float: left;
 }
+
 /* 15 */
 main header .fa {
     position: relative;
     top: 10px;
     right: 30px;
 }
+
 /* 16 */
-main header form input.form-control {
+main header form .form-control {
     float: left;
     width: 70%;
     height: 30px;
 }
+
 /* 17 */
-main header form input[type="submit"]{
+main header form input[type="submit"] {
     float: left;
     margin-left: 5px;
     height: 38px;
@@ -100,10 +103,12 @@ main header form input[type="submit"]{
 main header img {
     width: 90%;
 }
+
 /* 19 */
 main header img:hover {
     visibility: hidden;
 }
+
 /* --------------------------------------------------- */
 /* ------- SECCIÓN PRINCIPAL ------- */
 
@@ -115,18 +120,19 @@ main section {
 
 /* 21 */
 main aside {
-    width: 35%;
+    width: 30%;
     float: left;
 }
 
 /* 22 */
-main p {
+main section p {
     font-size: 0.9em;
     line-height: 1.4em;
     padding-right: 20px;
     text-align: justify;
     letter-spacing: 0.5px;
     word-spacing: 1px;
+    text-indent: 10%;
 }
 
 
@@ -134,14 +140,77 @@ main p {
 /* ------- LISTA MAIN ------- */
 
 /* 23 */
+main ul {
+    background: linear-gradient(top at bottom, #ccc, white);
+    font-size: 0.8em;
+    width: 70%;
+    margin: auto;
+}
+
+/* 24 */
+ li#transporte ul li {
+    font-weight: bold;
+}
+
+/* 25 */
+main section article ul li li:not(li#transporte) {
+    text-decoration: underline;
+}
+
+/* 26 */
+main section article li#transporte ul li {
+    list-style: upper-roman;
+    list-style-position: inside;
+}
 
 
 /* --------------------------------------------------- */
 /* ------- TABLA MAIN ------- */
+/* 27*/
+main section article:nth-of-type(2) h3:hover {
+    text-shadow: 2px 2px 2px #666;
+}
 
+/* 28 */
+main section article:nth-of-type(2) h3 {
+    font-size: 0.89em;
+}
+
+/* 29 */
+main section article:nth-of-type(2) table:active {
+    transform: scale(1.2);
+    margin: 40px 0px;
+}
+
+
+/* 30 */
+main section article:nth-of-type(2) table * {
+    border: 1px solid #ccc;
+}
+
+/* 31 */
+main section article:nth-of-type(2) table tr * {
+    padding: 6px;
+}
+
+/* 32 */
+main section article:nth-of-type(2) table td[rowspan],
+main section article:nth-of-type(2) table td[colspan] {
+    color: red;
+}
 /* --------------------------------------------------- */
 /* ------- TABLA LATERAL --------*/
+
+/* 33 */
+main aside h3 {
+    margin-top: 20px;
+    
+}
+
 
 /* --------------------------------------------------- */
 /* ------- PIE DE PÁGINA --------*/
 
+footer {
+    display: none;
+}
