@@ -202,15 +202,51 @@ main section article:nth-of-type(2) table td[colspan] {
 /* ------- TABLA LATERAL --------*/
 
 /* 33 */
-main aside h3 {
+main aside table h3 {
     margin-top: 20px;
-    
+    font-variant: small-caps;
+    font-size: 3em;
+    padding: 15px;
+    border-top: 5px double #ccc;
+    border-bottom: 5px double #ccc;
+    border-left: 5px double #666;
+    border-right: 5px double #666;
 }
 
+/* 34 */
+main aside table h3 {
+    border-radius: 10px 40px;
+}
 
+/* 35 */
+main aside table tr:nth-of-type(2) td {
+    background-image: url(/Simulacros/CSS/Picto_infobox_map.png);
+    background-repeat: no-repeat;
+}
+
+main aside  p {
+    width: 240px;
+    height: 100px;
+    background: linear-gradient(gray, white);
+    overflow: scroll;
+}
+
+/* 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 */
 /* --------------------------------------------------- */
 /* ------- PIE DE PÁGINA --------*/
 
-footer {
-    display: none;
+main footer {
+    clear: both;
+    margin: 20px 0;
+    float: left;
+    font-size: 1em;
+    width: 60%;
+}
+
+main footer:active {
+    transition: font-size, width;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    width: 100%;
+    font-size: 1.5em;
 }
