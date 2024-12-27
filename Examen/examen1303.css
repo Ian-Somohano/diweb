@@ -1,0 +1,323 @@
+/* Nombre: Ian Somohano Montoro */
+
+/* Reglas Generales */
+/* ############################################# */
+
+
+/*01. */
+body {
+   font-size: 0.7em;
+   background-color: rgb(241, 241, 241);
+}
+
+/*02. */
+@font-face {
+   font-family: Inter;
+   src: url(font/Inter.ttf);
+}
+
+body {
+   font-family: Inter;
+}
+
+/*03. */
+body > header {
+   width: 100%;
+   height: 80px;
+   background-color: white;
+   border-radius: 20px;
+}
+
+/*04. */
+aside {
+   border: 5px solid white;
+   border-radius: 20px;
+   border-top-style: dashed;
+}
+
+/* Reglas Header (Cabecera)*/
+/* ############################################# */
+
+/*05. */
+header figure img,
+header form { 
+   float: left;
+   position: absolute;
+   top: 20px;
+}
+
+/*05 (opcional). */
+header figure img {
+   border-radius: 10%;
+   filter: blur(0.2px);
+   width: 150px;
+   height: 50px;
+}
+
+/*06. */
+header form {
+   margin-top: 15px;
+   width: 45%;
+   text-align: right;
+   margin-left: 200px;
+}
+
+/*07. */
+header form input{
+   border: 1px solid #DF5521;
+   padding: 5px 15px;
+   box-shadow: 5px 5px 10px #DF5521;
+   border-radius: 10px;
+}
+
+/*08. */
+header form img {
+   vertical-align: middle;
+}
+
+/*09. */
+header nav:nth-of-type(2) {
+   position: absolute;
+   right: 40px;
+   top: 40px;
+}
+
+/*10. */
+header nav a{
+   text-decoration: none;
+   color: rgb(100,100,100);
+   opacity: 0.9;
+   margin: 0 10px;
+   font-size: 15px;
+}
+
+/* Reglas Section Mensaje (Banner)*/
+/* ############################################# */
+/*11. */
+section#primeranuncio {
+   padding: 5px;
+   width: 280px;
+   height: 80px;
+   background-color: linen;
+   border: 1px solid #DF5521;
+   border-radius: 1em;
+   display: block;
+   position: absolute;
+   top: 100px;
+   left: 550px;
+   z-index: 30;
+}
+
+/*12. */
+section#primeranuncio button {
+   position: relative;
+   bottom: 30px;
+   right: 10px;
+   float: right;
+   display: inline;
+}
+
+/* Reglas Aside (Laterales)*/
+/* ############################################# */
+/*13. */
+body > aside {
+   position: absolute;
+   width: 18%;
+   margin-left: 30px;
+   padding: 10px;
+   z-index: 10;
+} 
+
+/*14. */
+body > aside:nth-of-type(1) section:nth-of-type(1) h2 {
+   color: #DF5521;
+}
+
+/* Reglas Aside Izquierdo (Lateral Izquierdo)*/
+/* ############################################# */
+/*15. */
+body > aside:nth-of-type(1) {
+   top: 100px;
+   margin-right: 10px;
+}
+
+/*16. */
+body > aside:nth-of-type(1) form label {
+   display: block;
+}
+
+/*17. */
+body > aside:nth-of-type(1) form input {
+   border: 1px solid #DF5521;
+   padding: 2px;
+   box-shadow: 10px 10px 10px #DF5521;
+   width: 60%;
+   margin: 10px 0;
+}
+
+/*18. */
+body > aside:nth-of-type(1) form input:hover {
+   background-color: azure;
+}
+
+/*19. */
+body > aside:nth-of-type(1) form input[type="submit"] {
+   border: 1px solid #DF5521;
+   border-radius: 5px;
+   display: block;
+   margin-top: 15px;
+   padding: 5px 10px;   
+}
+
+/*20. */
+body > aside:nth-of-type(1) form label,
+body > aside:nth-of-type(1) section:nth-of-type(2) h2 {
+   text-transform: capitalize;
+   text-decoration: underline;
+}
+
+/*21. */
+body > aside:nth-of-type(1) form label,
+body > aside:nth-of-type(1) section:nth-of-type(2) ul li a {
+   color: rgba(100, 100, 100, 0.8);
+   text-decoration: none;
+   font-size: 14px;
+}
+
+/*22. */
+body > aside:nth-of-type(1) section:nth-of-type(2) ul li {
+   list-style-type: circle;
+}
+
+
+/* Reglas Main */
+/* ############################################# */
+/*23. */
+main {
+   position: absolute;
+   top: 100px;
+   left: 26%;
+   padding: 10px;
+   width: 45%;
+}
+
+/*24. */
+main h1 {
+   color: #DF5521;
+}
+
+/*25. */
+main article section figure img {
+   float: right;
+   margin: -10px -15px 10px 40px;
+   width: 30%;
+}
+
+/*26. */
+main article header h2 a {
+   border: 1px solid #DF5521;
+   border-radius: 5px;
+   padding: 5px;
+   margin-right: 15px;
+}
+
+/*27. */
+main article a {
+   text-decoration: none;
+   color: #DF5521;
+}
+
+/*28. */
+main article header h3,
+main article section p
+main article section *{
+   float: left;
+}
+
+/*29. */
+main article h3{
+   width: 100%;
+}
+
+/* Reglas Aside Derecho*/
+/* ############################################# */
+/*30. */
+body > aside:nth-of-type(2) {
+   top: 100px;
+   right: 10px;
+   margin-right: 10px;
+}
+
+/*31. */
+body > aside:nth-of-type(2) h2 {
+   color: #DF5521;
+}
+
+
+/*32. */
+body > aside:nth-of-type(2) table caption{
+   caption-side: bottom;
+   color: #DF5521;
+   font-size: 20px;
+}
+
+/*33. */
+body > aside:nth-of-type(2) table tr td:first-child {
+   color: #DF5521;
+   font-weight: bold;
+}
+
+/*34. */
+body > aside:nth-of-type(2) table tr td a{
+   text-decoration: none;
+   color: #333;
+}
+
+/*35. */
+body > aside:nth-of-type(2) table tr td a span {
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+/* Reglas Footer*/
+/* ############################################# */
+/*36. */
+footer {
+   position: relative;
+   top: 750px;
+   width: 100%;
+   padding: 20px;  
+}
+
+/*37. */
+footer table {
+   margin-left: 40%;
+   border-spacing: 10px;
+}
+
+/*38. */
+footer table a {
+   display: inline-block;
+   text-decoration: overline;
+   color: #DF5521;
+}
+
+/*39. */
+body {
+   height: 850px;
+   background: linear-gradient(bottom at top, rgba(255,255,255,0.2),rgba(255,255,255,0.6));
+   background-repeat: repeat-x;
+   background-position: bottom;
+   width: auto;
+   background-image: url(/Examen/img/meneame.png);
+}
+
+/*40. */
+footer table a::first-letter{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* ############################################# */
+/* FIN SECCIÓN CSS */
+/* ############################################# */

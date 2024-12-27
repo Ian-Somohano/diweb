@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    var cerraranuncio = (anuncio) => {
+      document.getElementById(anuncio).style.display = "none";
+
+      setTimeout(() => {
+        document.getElementById(anuncio).style.display = "block";
+      }, 30000); //cuatro segundos
+    };
+  </script>
+  <link rel="stylesheet" href="examen1303.css" />
+  <style>
+    /* Nombre: ................ */
+
+    /* Reglas Generales */
+    /* ############################################# */
+    /*01. */
+
+    /*02. */
+
+    /*03. */
+
+    /*04. */
+
+    /* Reglas Header (Cabecera)*/
+    /* ############################################# */
+    /*05. */
+
+    /*05 (opcional). */
+
+    /*06. */
+
+    /*07. */
+
+    /*08. */
+
+    /*09. */
+
+    /*10. */
+
+    /* Reglas Section Mensaje (Banner)*/
+    /* ############################################# */
+    /*11. */
+
+    /*12. */
+
+    /* Reglas Aside (Laterales)*/
+    /* ############################################# */
+    /*13. */
+
+    /*14. */
+
+    /* Reglas Aside Izquierdo (Lateral Izquierdo)*/
+    /* ############################################# */
+    /*15. */
+
+    /*16. */
+
+    /*17. */
+
+    /*18. */
+
+    /*19. */
+
+    /*20. */
+
+    /*21. */
+
+    /*22. */
+
+    /* Reglas Main */
+    /* ############################################# */
+    /*23. */
+
+    /*24. */
+
+    /*25. */
+
+    /*26. */
+
+    /*27. */
+
+    /*28. */
+
+    /*29. */
+
+    /* Reglas Aside Derecho*/
+    /* ############################################# */
+    /*30. */
+
+    /*31. */
+
+    /*32. */
+
+    /*33. */
+
+    /*34. */
+
+    /*35. */
+
+    /* Reglas Footer*/
+    /* ############################################# */
+    /*36. */
+
+    /*37. */
+
+    /*38. */
+
+    /*39. */
+
+    /*40. */
+
+    /* ############################################# */
+    /* FIN SECCIÓN CSS */
+    /* ############################################# */
+  </style>
+</head>
+
+<!-- EL HTML NO SE TOCA!!! -->
+<!-- ########################################################### -->
+
+<body>
+  <!-- HEADER -->
+  <!-- ############################ -->
+  <header>
+    <figure>
+      <img src="img/meneame.png" alt="..." />
+    </figure>
+    <nav>
+      <form action="#">
+        <img src="img/buscar.png" alt="..." />
+        <input type="text" id="buscar" name="buscar" />
+        <input type="submit" value="Buscar" />
+      </form>
+    </nav>
+    <nav>
+      <a href="#">Login</a>
+      <a href="#">Registrate</a>
+    </nav>
+  </header>
+
+  <!-- SECTION CON CAPA (CON MORALEJA ;D) -->
+  <!-- ############################ -->
+  <section id="primeranuncio" class="anuncio">
+    <h4>Examen CSS</h4>
+    <p>No te angusties si no te queda igual ;)</p>
+    <button class="boton" onclick="cerraranuncio('primeranuncio')">x</button>
+  </section>
+
+  <!-- ASIDE IZQUIERDO -->
+  <!-- ############################ -->
+  <aside>
+    <section>
+      <h2>Registro</h2>
+      <form action="#">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" />
+        <label for="clave">Contraseña:</label>
+        <input type="text" id="clave" name="clave" />
+        <input type="submit" value="Acceso" />
+      </form>
+    </section>
+    <section>
+      <h2>Otras secciones</h2>
+      <ul>
+        <li><a href="#">Portada</a></li>
+        <li><a href="#">Nuevas</a></li>
+        <li><a href="#">Artículos</a></li>
+        <li><a href="#">Populares</a></li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- MAIN -->
+  <!-- ############################ -->
+  <main>
+    <h1>Menéame</h1>
+    <article>
+      <header>
+        <h2>
+          <a href="#">Únete a Tecnología</a>
+        </h2>
+        <p>por cernicalo a eldiario.es 21/12 17:38 publicado: 21/12 22:20</p>
+        <h3>
+          Casi 5 millones de euros de sanción a Netflix por ocultar dónde
+          envía los datos de sus usuarios
+        </h3>
+      </header>
+      <section>
+        <h4><a href="https://www.eldiario.es">www.eldiario.es</a></h4>
+        <figure>
+          <img src="img/netflix.webp" alt="..." />
+        </figure>
+        <p>
+          La Autoridad Holandesa de Protección de Datos (DPA, por sus siglas
+          en inglés) ha impuesto una sanción de 4,75 millones de euros a
+          Netflix por no informar adecuadamente a sus clientes sobre cómo
+          maneja sus datos personales.
+        </p>
+        <p>
+          La investigación, iniciada en 2019, reveló que la compañía no
+          proporcionaba información clara en su declaración de privacidad
+          sobre el uso de los datos recopilados, incluyendo direcciones de
+          correo electrónico, números de teléfono, detalles de pago y el
+          historial de visualización.
+        </p>
+      </section>
+    </article>
+    <article>
+      <header>
+        <h2><a href="#">Únete a Cultura</a></h2>
+        <p>Por ccguy a jotdown.es 04:23 publicado: hace 18 min</p>
+        <h3>MacGyver: no sin mi navaja</h3>
+      </header>
+      <section>
+        <h4><a href="https://www.jotdown.es">www.jotdown.es</a></h4>
+        <figure>
+          <img src="img/macgyver.webp" alt="..." />
+        </figure>
+        <p>
+          MacGyver fue el auténtico inventor del branded content en los
+          contenidos televisivos. Fue un pionero. Nadie había hecho tanto, con
+          el permiso de Eduardo Manostijeras, para promocionar la navaja
+          multiusos del ejército suizo.
+        </p>
+        <p>
+          El personaje interpretado por el entrañable Richard Dean Anderson demostraba en cada capítulo que con un
+          chicle, una pizca de curry, cien gramos de harina, dos cucharadas de azufre, veinte centímetros de alambre, un
+          poco de papel higiénico, todo bien salpimentado y nada removido, y, por supuesto, su fantástica navaja...
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- ASIDE DERECHO -->
+  <!-- ############################ -->
+  <aside>
+    <h2>En comunidades</h2>
+    <table>
+      <caption>
+        Otras noticias
+      </caption>
+      <tr>
+        <td>11 meneos</td>
+        <td>
+          <a href="#">
+            <span>CÁÑAMO</span> Cuatro detenidos en Burgos y Badajoz por
+            tráfico de marihuana mediante cultivo ilícito de cáñamo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>72 meneos</td>
+        <td>
+          <a href="#">
+            <span>SEQUÍA</span> España, en situación de sequía meteorológica
+            tras el segundo invierno más seco desde 1961
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>28 meneos</td>
+        <td>
+          <a href="#">
+            <span>ARTÍCULOS</span> La guerra y el PDF. Un vínculo necesario
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>07 meneos</td>
+        <td>
+          <a href="#">
+            <span>ARTÍCULOS</span> El conflicto Rusia, EEUU, China, Europa...
+            era inevitable
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>07 meneos</td>
+        <td>
+          <a href="#">
+            <span>FOSILES</span> Así es ‘Horridus’, el triceratops más
+            completo que se ha encontrado hasta ahora
+          </a>
+        </td>
+      </tr>
+    </table>
+  </aside>
+
+  <!-- FOOTER -->
+  <!-- ############################ -->
+  <footer>
+    <table>
+      <tr>
+        <td><a href="#">Ayuda</a></td>
+        <td><a href="#">Blog</a></td>
+        <td><a href="#">Nótame</a></td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>
