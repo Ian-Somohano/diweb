@@ -7,130 +7,96 @@
     <title>El Corte Inglés</title>
 
     <style>
-        /* Formateo de la pagina */
         body {
-            font-size: 16px;
             margin: 0;
             padding: 0;
-        }
-        /* Header */
-        header {
-            background-color: white;
-            position: sticky;
-            top: 0px;
-            bottom: 100px;
-            height: 20vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
         }
 
-        header section img {
-            width: auto;
-            height: 30px;
-        }
-
-        header section:first-of-type img:nth-of-type(2) {
-            height: 30px;
-            width: auto;
-        }
-
-        header form{
-            padding: 3px 0;
-            position: relative;
-            /* max-width: 800px; */
-        }
-
-        header section {
-            justify-content: center;
+        /* Anuncio superior */
+        span{
+            display: block;
+            background-color: #ccc;
+            height: 45px;
+            text-align: center;
             align-content: center;
-            height: 100%;
+        }
+
+        /* Estilando el header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+        }
+
+        header > * {
+            align-content: center;
+            text-align: center;
+            height: 50%;
         }
 
         header section:first-of-type {
-            position: relative;
-            left: 15px;
-            text-align: center;
-            gap: 5px;
+            margin-left: 25px;
+        }
+
+        header section:last-of-type {
+            margin-right: 25px;
+        }
+
+
+        header section img {
+            width: 30px;
+        }
+
+        header section:first-of-type img:nth-of-type(2) {
+            width: 150px;
         }
 
         header form {
-            position: relative;
-            left: 30px;
             width: 40%;
-            align-items: center;
-            display: flex;
-            border: 1px solid gray;
-            margin: 0 10px;
-            border-radius: 20px;
-            background-color: white;
-            padding: 5px;
-        }
-
-        form input {
-            border: none;
-            position: relative;
-        }
-
-        header form button {
-            position: absolute;
-            right: 4%;
-            border: none;
+            border: 1px solid #ccc;
             border-radius: 30px;
-            width: 20px;
-            padding: 2px;
-            align-items: center;
-            background-color: rgb(43, 203, 43);
         }
 
         header form img {
-            width: 13px;
-            width: 10px;
-            background: none;
+            width: 20px;
         }
 
-        header section:nth-of-type(2) {
-            display: flex;
-            flex-wrap: nowrap;
+        header form button {
+            border: none;
+            border-radius: 50%;
+            padding: 6px 8px;
+            background-color: #008539;
+        }
+
+        header form input{
+            height: 80%;
+            width: 88%;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+        }
+
+        header form input::placeholder {
             position: relative;
-            gap: 10px;
-            margin-right: 30px;
+            left: 10px;
         }
 
-        /* Estilando el nav */
 
-        nav {
-            background-color: white;
-            padding: 10px;
-            position: sticky;
-            top: 20vh;
+        img {
+            width: 80px;
         }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            justify-content: space-around;
-            margin: auto auto;
-            width: 70%;
-        }
-
-        nav a {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-decoration: none;
-            color: black;
-            font-size: 12px;
-        }
-
-        /* Estilando el main */
-        table img {
-            width: 200px;
-        }
-
+        
     </style>
-
 </head>
 
 <body>
+    <!-- Anuncio superior -->
+    <span>Descárgate aquí nuestra <strong>App.</strong></span>
+
     <header>
         <!-- Menu hamburguesa + logo -->
         <section aria-label="menu">
