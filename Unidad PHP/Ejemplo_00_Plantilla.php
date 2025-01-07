@@ -7,6 +7,7 @@ if (isset($_REQUEST['enviar'])) {
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
