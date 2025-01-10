@@ -5,7 +5,6 @@ $alerta = "Mensaje...";
 if (isset($_REQUEST['enviar'])) {
     $alerta = $_REQUEST['usuario'];
 }
-
 ?>
 
 <!DOCTYPE html>
