@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Corte Inglés</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         body {
@@ -22,6 +23,7 @@
             height: 45px;
             text-align: center;
             align-content: center;
+            margin-bottom: 8px;
         }
 
         /* Estilando el header */
@@ -38,27 +40,40 @@
             height: 50%;
         }
 
+        header section *{
+            margin: 2px;
+        }
+
+        header section {
+            justify-content: center;
+            align-content: center;
+        }
+
         header section:first-of-type {
             margin-left: 25px;
+            height: auto;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; 
         }
 
         header section:last-of-type {
             margin-right: 25px;
         }
 
-
-        header section img {
-            width: 30px;
+        header section:last-of-type a{
+            text-decoration: none;
         }
 
-        header section:first-of-type img:nth-of-type(2) {
-            width: 150px;
-        }
+        /* header section i {
+            width: 40px;
+        } */
+
 
         header form {
             width: 40%;
             border: 1px solid #ccc;
             border-radius: 30px;
+            min-height: 35px;
         }
 
         header form img {
@@ -66,9 +81,10 @@
         }
 
         header form button {
+            height: 70%;
+            width: 30px;
             border: none;
-            border-radius: 50%;
-            padding: 6px 8px;
+            border-radius: 20px;
             background-color: #008539;
         }
 
@@ -78,13 +94,17 @@
             border: none;
             background-color: transparent;
             font-size: 16px;
+            border-radius: 20px;
         }
 
-        header form input::placeholder {
-            position: relative;
-            left: 10px;
+        header form input:focus {
+            border: none;
+            outline: none;
         }
 
+        header form input:hover {
+            cursor: pointer;
+        }
 
         img {
             width: 80px;
@@ -100,7 +120,7 @@
     <header>
         <!-- Menu hamburguesa + logo -->
         <section aria-label="menu">
-            <img src="img/menu.png" alt="menu">
+            <i class="fa-solid fa-bars fa-xl" style="color: #a6a6a6;"></i>
             <img src="img/logo.png" alt="logo">
         </section>
 
@@ -109,20 +129,20 @@
             <input id="buscar" name="buscar" type="text" placeholder="¿Qué estas buscando?">
 
             <button>
-                <img src="https://cdn-icons-png.flaticon.com/512/3721/3721746.png" alt="lupa">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
             </button>
         </form>
 
         <!-- Iconos con elaces -->
         <section aria-label="iconos">
             <a href="#">
-                <img src="img/usuario.png" alt="usuario">
+                <i class="fa-solid fa-user fa-xl" style="color: #a6a6a6;"></i>
             </a>
             <a href="#">
-                <img src="img/corazon.png" alt="favoritos">
+                <i class="fa-solid fa-heart fa-xl" style="color: #a6a6a6;"></i>
             </a>
             <a href="#">
-                <img src="img/bolsa.png" alt="carrito">
+                <i class="fa-solid fa-cart-shopping fa-xl" style="color: #a6a6a6;"></i>
             </a>
         </section>
     </header>
