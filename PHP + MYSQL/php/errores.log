@@ -1,0 +1,334 @@
+[13-Jan-2025 16:33:28 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 11
+[13-Jan-2025 16:33:48 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 11
+[13-Jan-2025 16:33:49 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 11
+[13-Jan-2025 16:33:49 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 11
+[13-Jan-2025 16:33:50 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 11
+[13-Jan-2025 16:36:22 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 11
+[13-Jan-2025 16:36:22 UTC] PHP Warning:  require(miarchivo.php): Failed to open stream: No such file or directory in /var/www/html/php/errores.php on line 12
+[13-Jan-2025 16:36:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'miarchivo.php' (include_path='.:/usr/share/php') in /var/www/html/php/errores.php:12
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/errores.php on line 12
+[13-Jan-2025 16:50:11 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 15
+[13-Jan-2025 16:50:11 UTC] PHP Warning:  require(miarchivo.php): Failed to open stream: No such file or directory in /var/www/html/php/errores.php on line 16
+[13-Jan-2025 16:50:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'miarchivo.php' (include_path='.:/usr/share/php') in /var/www/html/php/errores.php:16
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/errores.php on line 16
+[13-Jan-2025 16:50:15 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 15
+[13-Jan-2025 16:50:16 UTC] PHP Warning:  Undefined variable $variable in /var/www/html/php/errores.php on line 15
+[14-Jan-2025 15:20:41 UTC] PHP Warning:  require(funcione.php): Failed to open stream: No such file or directory in /var/www/html/php/Ejemplo_02_consultar.php on line 6
+[14-Jan-2025 15:20:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'funcione.php' (include_path='.:/usr/share/php') in /var/www/html/php/Ejemplo_02_consultar.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/Ejemplo_02_consultar.php on line 6
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:18:58 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:11 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:12 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:13 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 73
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 74
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 75
+[14-Jan-2025 16:19:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 76
+[14-Jan-2025 16:19:53 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:53 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:53 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:53 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:57 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:57 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:57 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:19:57 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:20:46 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:20:46 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:20:46 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:20:46 UTC] PHP Warning:  Array to string conversion in /var/www/html/php/Ejemplo_02_consultar.php on line 72
+[14-Jan-2025 16:58:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /var/www/html/php/01-cargar-bbdd.php:14
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(14): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 14
+[14-Jan-2025 16:58:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /var/www/html/php/01-cargar-bbdd.php:14
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(14): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 14
+[14-Jan-2025 16:59:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /var/www/html/php/01-cargar-bbdd.php:14
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(14): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 14
+[14-Jan-2025 17:00:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /var/www/html/php/01-cargar-bbdd.php:14
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(14): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 14
+[14-Jan-2025 17:00:56 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 18
+[14-Jan-2025 17:00:56 UTC] PHP Warning:  Undefined variable $filas in /var/www/html/php/01-cargar-bbdd.php on line 62
+[14-Jan-2025 17:00:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on null in /var/www/html/php/01-cargar-bbdd.php:62
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 62
+[14-Jan-2025 17:06:14 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 22
+[14-Jan-2025 17:06:14 UTC] PHP Warning:  Undefined variable $filas in /var/www/html/php/01-cargar-bbdd.php on line 66
+[14-Jan-2025 17:06:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on null in /var/www/html/php/01-cargar-bbdd.php:66
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 66
+[14-Jan-2025 17:06:24 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 22
+[14-Jan-2025 17:06:24 UTC] PHP Warning:  Undefined variable $filas in /var/www/html/php/01-cargar-bbdd.php on line 66
+[14-Jan-2025 17:06:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on null in /var/www/html/php/01-cargar-bbdd.php:66
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 66
+[14-Jan-2025 17:09:09 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 22
+[14-Jan-2025 17:12:05 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 22
+[14-Jan-2025 17:12:09 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 22
+[14-Jan-2025 18:24:28 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/Ejemplo_02_consultar.php on line 14
+[14-Jan-2025 18:24:58 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/Ejemplo_02_consultar.php on line 17
+[14-Jan-2025 18:24:59 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/Ejemplo_02_consultar.php on line 17
+[14-Jan-2025 18:25:01 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/Ejemplo_02_consultar.php on line 17
+[14-Jan-2025 18:25:22 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 23
+[14-Jan-2025 18:42:44 UTC] PHP Warning:  file_get_contents(MiConexion_simplificando.php): Failed to open stream: No such file or directory in /var/www/html/php/01-cargar-bbdd.php on line 19
+[14-Jan-2025 18:42:44 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/01-cargar-bbdd.php on line 28
+[14-Jan-2025 18:55:21 UTC] PHP Warning:  file_get_contents(MiConexion_simplificando.php): Failed to open stream: No such file or directory in /var/www/html/php/01-cargar-bbdd.php on line 19
+[14-Jan-2025 18:55:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Query was empty in /var/www/html/php/01-cargar-bbdd.php:26
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(26): mysqli->multi_query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 26
+[14-Jan-2025 18:55:29 UTC] PHP Warning:  file_get_contents(MiConexion_simplificando.php): Failed to open stream: No such file or directory in /var/www/html/php/01-cargar-bbdd.php on line 19
+[14-Jan-2025 18:55:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Query was empty in /var/www/html/php/01-cargar-bbdd.php:26
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(26): mysqli->multi_query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 26
+[14-Jan-2025 18:56:17 UTC] PHP Warning:  file_get_contents(MiConexion_simplificando.php): Failed to open stream: No such file or directory in /var/www/html/php/01-cargar-bbdd.php on line 19
+[14-Jan-2025 18:56:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Query was empty in /var/www/html/php/01-cargar-bbdd.php:26
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(26): mysqli->multi_query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 26
+[14-Jan-2025 18:57:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'simplificando' in /var/www/html/php/funciones.php:39
+Stack trace:
+#0 /var/www/html/php/funciones.php(39): mysqli->__construct()
+#1 /var/www/html/php/Ejemplo_02_consultar.php(15): conectarBBDD()
+#2 {main}
+  thrown in /var/www/html/php/funciones.php on line 39
+[14-Jan-2025 18:57:38 UTC] PHP Warning:  file_get_contents(MiConexion_simplificando.php): Failed to open stream: No such file or directory in /var/www/html/php/01-cargar-bbdd.php on line 19
+[14-Jan-2025 18:57:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Query was empty in /var/www/html/php/01-cargar-bbdd.php:26
+Stack trace:
+#0 /var/www/html/php/01-cargar-bbdd.php(26): mysqli->multi_query()
+#1 {main}
+  thrown in /var/www/html/php/01-cargar-bbdd.php on line 26
+[15-Jan-2025 17:01:51 UTC] PHP Warning:  Undefined variable $Precio in /var/www/html/php/03-insertar.php on line 30
+[16-Jan-2025 15:16:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:26
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(26): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 26
+[16-Jan-2025 15:29:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:26
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(26): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 26
+[16-Jan-2025 15:29:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:26
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(26): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 26
+[16-Jan-2025 15:29:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:26
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(26): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 26
+[16-Jan-2025 15:30:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:26
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(26): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 26
+[16-Jan-2025 15:39:52 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/05-eliminar.php on line 17
+[16-Jan-2025 15:39:52 UTC] PHP Warning:  Undefined variable $filas in /var/www/html/php/05-eliminar.php on line 69
+[16-Jan-2025 15:39:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on null in /var/www/html/php/05-eliminar.php:69
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 69
+[16-Jan-2025 15:40:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:101
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(101): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 101
+[16-Jan-2025 15:40:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:101
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(101): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 101
+[16-Jan-2025 15:41:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:101
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(101): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 101
+[16-Jan-2025 15:41:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'simplificando.producto' doesn't exist in /var/www/html/php/05-eliminar.php:101
+Stack trace:
+#0 /var/www/html/php/05-eliminar.php(101): mysqli->query()
+#1 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 101
+[16-Jan-2025 15:41:19 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:41:23 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:41:30 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:41:31 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:41:31 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:41:32 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:41:33 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:104
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 104
+[16-Jan-2025 15:42:34 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /var/www/html/php/05-eliminar.php:106
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 106
+[16-Jan-2025 17:18:45 UTC] PHP Warning:  Undefined variable $ejecutaSQL in /var/www/html/php/05-eliminar.php on line 38
+[16-Jan-2025 17:18:47 UTC] PHP Warning:  Undefined variable $ejecutaSQL in /var/www/html/php/05-eliminar.php on line 38
+[16-Jan-2025 17:19:15 UTC] PHP Warning:  Undefined variable $ejecutaSQL in /var/www/html/php/05-eliminar.php on line 38
+[16-Jan-2025 17:19:17 UTC] PHP Warning:  Undefined variable $ejecutaSQL in /var/www/html/php/05-eliminar.php on line 38
+[16-Jan-2025 17:21:42 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/05-eliminar.php on line 16
+[16-Jan-2025 17:21:42 UTC] PHP Warning:  Undefined variable $filas in /var/www/html/php/05-eliminar.php on line 89
+[16-Jan-2025 17:21:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on null in /var/www/html/php/05-eliminar.php:89
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 89
+[16-Jan-2025 17:21:46 UTC] PHP Warning:  Undefined variable $numFilas in /var/www/html/php/05-eliminar.php on line 16
+[16-Jan-2025 17:21:46 UTC] PHP Warning:  Undefined variable $filas in /var/www/html/php/05-eliminar.php on line 89
+[16-Jan-2025 17:21:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on null in /var/www/html/php/05-eliminar.php:89
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/php/05-eliminar.php on line 89
