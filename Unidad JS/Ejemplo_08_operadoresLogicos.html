@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        function and() {
+            let num1 = boleano(prompt("Entrada uno:"));
+            let num2 = boleano(prompt("Entrada dos:"));
+
+            let resultado = num1 && num2; // esto es un and
+
+            alert(`El resultado da: ${resultado}`);
+        }
+
+        function or() {
+            let num1 = boleano(prompt("Entrada uno:"));
+            let num2 = boleano(prompt("Entrada dos:"));
+
+            let resultado = num1 || num2; // esto es un or
+
+            alert(`El resultado da: ${resultado}`);
+        }
+
+        function not() {
+            let num1 = boleano(prompt("Entrada uno:"));
+
+            let resultado = !num1; // esto es un not
+
+            alert(`El resultado da: ${resultado}`);
+        }
+        // Creo mi propia función de boleanos
+        function boleano(num) {
+            return num === "1";
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-primary m-4" style="padding: 20px 80px;" onclick="or();">OR</button>
+
+            <button type="submit" class="btn btn-success m-4" style="padding: 20px 80px;" onclick="and();">AND</button>
+
+            <button type="submit" class="btn btn-danger m-4" style="padding: 20px 80px;" onclick="not();">NOT</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        function suma() {
+            let num1 = parseInt(prompt("Dame numero uno:"));
+            let num2 = parseInt(prompt("Dame numero dos:"));
+            
+            let resultado = num1 + num2;
+
+            alert(`La suma es: ${resultado}`);
+        }
+        
+        function division() {
+            let num1 = parseInt(prompt("Dame numero uno:"));
+            var num2 = parseInt(prompt("Dame numero dos:"));
+            
+            let resultado = num1 / num2;
+
+            alert(`La división es: ${resultado}`);
+        }
+
+        function modulo() {
+            let num1 = parseInt(prompt("Dame numero uno:"));
+            let num2 = parseInt(prompt("Dame numero dos:"));
+            
+            let resultado = num1 % num2;
+
+            alert(`El módulo es: ${resultado}`);
+        }
+
+        function puertas() {
+            let num1 = true;
+            let num2 = false;
+            
+            let resultado = num1 && num2; // esto es un and
+            let resultado2 = num1 || num2; // esto es un or
+
+
+            alert(`El and da: ${resultado} y el or da: ${resultado2}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-outline-primary m-4" style="padding: 20px 80px;" onclick="suma();">Suma</button>
+
+            <button type="submit" class="btn btn-outline-danger m-4" style="padding: 20px 80px;" onclick="division();">División</button>
+
+            <button type="submit" class="btn btn-outline-secondary m-4" style="padding: 20px 80px;" onclick="modulo();">Módulo</button>
+
+            <button type="submit" class="btn btn-outline-success m-4" style="padding: 20px 80px;" onclick="puertas();">Puertas Lógicas</button>
+        </form>
+    </main>
+</body>
+
+</html>

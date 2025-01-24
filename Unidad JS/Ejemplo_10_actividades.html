@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        function iniciar() {
+            let num1 = parseInt(prompt("Dime tu edad"));
+
+            if (num1 >= 18) {
+                alert("Eres mayor de edad puedes pasar");
+                if (num1 >= 67) {
+                    alert("Te puedes jubilar");
+                } else {
+                    alert("Te toca currar");
+                }
+            } else {
+                alert("A tu casa, a ver pocoyo");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-danger m-4" style="box-sizing: border-box; width: 200px; height: 60px;"
+                onclick="iniciar();"> Prueba el condicional</button>
+        </form>
+    </main>
+</body>
+
+</html>

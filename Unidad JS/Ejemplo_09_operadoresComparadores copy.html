@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        function menor() {
+            let num1 = parseInt(prompt("Entrada uno:"));
+            let num2 = parseInt(prompt("Entrada dos:"));
+
+            let resultado = num1 < num2;
+
+            alert(`Es ${num1} < que ${num2} : ${resultado}`);
+        }
+
+        function diferente() {
+            let num1 = parseInt(prompt("Entrada uno:"));
+            let num2 = parseInt(prompt("Entrada dos:"));
+
+            let resultado = num1 != num2;
+
+            alert(`Es ${num1} distinto que ${num2} : ${resultado}`);
+        }
+
+        function mayorIgual() {
+            let num1 = parseInt(prompt("Entrada uno:"));
+            let num2 = parseInt(prompt("Entrada dos:"));
+
+            let resultado = num1 >= num2;
+
+            alert(`Es ${num1} >= que ${num2} : ${resultado}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-primary m-4"
+                style="box-sizing: border-box; width: 200px; height: 60px;" onclick="menor();">Menor</button>
+
+            <button type="submit" class="btn btn-success m-4"
+                style="box-sizing: border-box; width: 200px; height: 60px;" onclick="diferente();">Distinto</button>
+
+            <button type="submit" class="btn btn-danger m-4" style="box-sizing: border-box; width: 200px; height: 60px;"
+                onclick="mayorIgual();">Mayor o Igual</button>
+        </form>
+    </main>
+</body>
+
+</html>
