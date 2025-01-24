@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <script>
+        function hoy() {
+            // Definimos un array con los dias de la semana
+            let dias = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+
+            // USamos literales de plantilla -> ` ${variable} `
+            window.alert(`Hoy es ${dias[3]}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form" style="display: grid; place-items: center; height: 100vh;">
+
+            <button type="submit" class="btn btn-outline-primary p-4" onclick="hoy();">Dime la posicion del array</button>
+        </form>
+    </main>
+</body>
+
+</html>

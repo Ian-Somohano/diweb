@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <script>
+        function sumar() {
+            // parseInt trasforma el propmt en un numero
+            // parseFloat trasforma el propmt en un decimal
+            // Boolean trasforma el propmt en un decimal
+
+            let num1 = parseInt(prompt("Dime un numero"));
+            let num2 = parseInt(prompt("Dime otro numero"));
+            
+            let resultado = num1 + num2;
+            // USamos literales de plantilla -> ` ${variable} `
+            window.alert(`El resultado  ${num1} + ${num2}  = ${resultado}` );
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form" style="display: grid; place-items: center; height: 100vh;">
+
+            <button type="submit" class="btn btn-primary p-4" onclick="sumar();">
+                Sumar
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>

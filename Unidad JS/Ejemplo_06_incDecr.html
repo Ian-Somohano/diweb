@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <script>
+        function hoy() {
+            // ++ es el operador de incremento
+            // -- es el operadoer de decremento
+
+            let num1 = 5;
+            alert(`El valor de num1 = ${num1}`);
+            num1++;
+            alert(`El valor de num1 = ${num1}`);
+            num1--;
+            alert(`El valor de num1 = ${num1}`);
+            // Acortar incrementos/decrementos
+            // num1 = num + 1 ~ num1 += 1
+            num1+= 5;
+            alert(`El valor de num1 = ${num1}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form" style="display: grid; place-items: center; height: 100vh;">
+
+            <button type="submit" class="btn btn-outline-primary p-4" onclick="hoy();">Dime la posicion del
+                array</button>
+        </form>
+    </main>
+</body>
+
+</html>
