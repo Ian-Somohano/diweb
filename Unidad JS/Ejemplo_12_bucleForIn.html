@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        function iniciar() {
+            // -------------
+            // for (let i = 0; i < numeros.length; i++) {
+            //     numero = numeros[i];
+            //     suma += numero;
+            // }
+            // -------------
+
+
+
+            let numeros = [3, 5, 7, 2, 8]
+            let suma = 0;
+            for (i in numeros) {
+                numero = numeros[i];
+                suma += numero;
+            }
+            alert(`La suma de los elementos es: ${suma}`);
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-warning m-5" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="iniciar()"> Activa el bucle For IN</button>
+        </form>
+    </main>
+</body>
+
+</html>
