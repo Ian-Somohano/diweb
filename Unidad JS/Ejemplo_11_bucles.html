@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        function bucle() {
+            let num = 0;
+            while (num <= 10) {
+                console.log(num);
+                num++;
+            }
+        }
+
+        function bucleFor() {
+            for (let i = 0; i <= 10; i++) {
+                alert(`Hola mundo ${i}`);
+                console.log(`Hola mundo ${i}`);
+            }
+        }
+
+        function bluceClase() {
+            let mensaje = "";
+            for (let i = 0; i <= 10; i++) {
+                mensaje += "Hola mundo \n"
+            }
+            console.log(mensaje);
+            alert(mensaje);
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-warning m-5" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="bucle()"> Activa el bucle While</button>
+
+            <button type="submit" class="btn btn-info m-5" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="bluceClase();"> Activa el bucle For</button>
+        </form>
+    </main>
+</body>
+
+</html>

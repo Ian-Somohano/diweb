@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- Ejercicios JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <script>
+        // 1. Pide 2 números. Imprime en un alert los pares entre ambos
+        function uno() {
+            let num1 = parseInt(prompt("Dame un número par"));
+            let num2 = parseInt(prompt("Dame otro número par mayor"));
+
+            let aux = 0;
+
+            // Comprobar que num 1 sea menos que num 2
+            if (num1 > num2) {
+                aux = num1;
+                num1 = num2;
+                num2 = aux;
+            }
+            // Comprobar si num1 es par
+            if (num1%2 != 0) {
+                num1++;
+            }
+
+            let pares = "";
+
+            for (let i = num1; i <= num2; i += 2) {
+                pares += i + "\n";
+            }
+            alert(pares);
+        }
+
+        // 2. Escribir la siguiente pirámide:
+        // *
+        // **
+        // ***
+        // ****
+        function dos() {
+            // Pedir niveles
+            let niveles = parseInt(prompt("Dame niveles"));
+            
+            // Pasar de un nivel a otro
+            piramide = "";
+            for (let i = 0; i <= niveles; i++) {
+                // Pintar tantos asteriscos como el nivel actual
+                // Indices 1.I 2.J 3.K
+                for (let j = 1; j <= i; j++) {
+                    piramide += "*";
+                }
+                piramide += "\n"
+            }
+            alert(piramide);
+        }
+
+        // 3. Siendo un array numeros = [3, 5, 7, 2, 8]; 
+        // Suma los valores de dichos números
+        function tres() {
+            let numeros = [3, 5, 7, 2, 8]
+            let suma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                numero = numeros[i];
+                suma += numero;
+            }
+
+            alert(`La suma de los elementos es: ${suma}`);
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-warning m-2" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="uno()"> Ejercicio 1</button>
+
+            <button type="submit" class="btn btn-info m-2" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="dos();"> Ejercicio 2</button>
+
+            <button type="submit" class="btn btn-success m-2" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="tres();"> Ejercicio 3</button>
+        </form>
+    </main>
+</body>
+
+</html>
