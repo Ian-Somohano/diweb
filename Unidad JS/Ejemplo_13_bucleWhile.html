@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        // Función Suma(0E,1S)
+        function suma() {
+            let num1 = parseInt(prompt("Dame Nº1"));
+            let num2 = parseInt(prompt("Dame Nº2"));
+
+            let resultado = num1 + num2;
+
+            return resultado;
+        }
+
+        // Función Resta(NE,1S) -- El más dificil
+        function resta(num1, num2) {
+            let resultado = num1 - num2;
+
+            return resultado;
+        }
+
+        // Función Multiplicar(0E,0S) -- El más fácil
+        function producto() {
+            let num1 = parseInt(prompt("Dame Nº1"));
+            let num2 = parseInt(prompt("Dame Nº2"));
+
+            let resultado = num1 * num2;
+
+            alert(resultado);
+        }
+
+        // Función Dividir(NE,0S)
+        function division(num1, num2) {
+            let resultado = num1 / num2;
+
+            alert(resultado);
+        }
+
+        // Iniciar es 
+        function iniciar() {
+            let opcion = 0;
+            while (opcion < 5) {
+                opcion = parseInt(prompt(`--- Menu Principal ---
+                1.Sumar
+                2.Restar
+                3.Multiplicar
+                4.Dividir
+                5.Salir`));
+
+                // Switch
+                switch (opcion) {
+                    case 1:
+                        alert(suma());
+                        break;
+
+                    case 2:
+                        let numA = parseInt(prompt("Dame Nº1"));
+                        let numB = parseInt(prompt("Dame Nº2"));
+                        alert(resta(numA, numB));
+                        break;
+
+                    case 3:
+                        producto();
+                        break;
+
+                    case 4:
+                        let num1 = parseInt(prompt("Dame Nº1"));
+                        let num2 = parseInt(prompt("Dame Nº2"));
+                        division(num1, num2);
+                        break;
+
+                    case 5: break;
+                    
+                    default:
+                        alert("Opcion incorrecta");
+                }
+            }
+            alert(`Se acabó el programa`)
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-warning m-5" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="iniciar()"> Activa el bucle While</button>
+        </form>
+    </main>
+</body>
+
+</html>
