@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <script>
+        /*
+           +----------------+
+            |   Persona      |
+            +----------------+
+            | - nombre: str  |
+            | - edad: int    |
+            | - ciudad: str  |
+            +----------------+
+            | + imprimir(): str |
+            +----------------+
+                    ▲
+                    │
+   ---------------------------------
+   |                               |
++------------+                +------------+
+|   Alumno   |                |  Profesor  |
++------------+                +------------+
+| - curso: str  |             | - materia: str  |
+| - nota: float |             | - salario: float |
++------------+                +------------+
+| + imprimir(): str |         | + imprimir(): str |
++------------+                +------------+ 
+        */
+
+        class Persona {
+            nombre = "";
+            edad = 0;
+            ciudad = "";
+
+            constructor(nombre, edad, ciudad) {
+                this.nombre = nombre;
+                this.edad = edad;
+                this.ciudad = ciudad;
+            }
+
+            imprimir() {
+                return JSON.stringify(this, null, 2);
+            }
+        }
+
+        class Alumno extends Persona {
+            curso = "";
+            nota = 0.0;
+
+            constructor(nombre, edad, ciudad, curso, nota) {
+                super(nombre,edad,ciudad);
+                this.curso = curso;
+                this.nota = nota;
+            }
+        }
+
+        class Profesor extends Persona {
+            materia = "";
+            salario = 0.0;
+
+            constructor(nombre, edad, ciudad) {
+                super(nombre,edad,ciudad);
+                
+            }
+        }
+
+        function iniciar() {
+            let alumno1 = new Alumno("Ian", 21, "Sevilla", "JS", 10);
+
+            alert(`Alumno 1 : \n ${JSON.stringify(alumno1, null,2)}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-outline-danger m-5"
+                style="box-sizing: border-box; width: 90%; height: 60px;" onclick="iniciar()">INICIAR</button>
+        </form>
+    </main>
+</body>
+
+</html>
