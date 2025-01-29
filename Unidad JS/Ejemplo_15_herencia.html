@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        // Defino una clase padre o super clase
+        class Vehiculo {
+            //Atributos
+            modelo = "";
+            precio = 0.0;
+            velocidad = 0;
+
+            constructor(modelo, precio,) {
+                this.modelo = modelo;
+                this.precio = precio;
+            }
+
+            acelerar(aceleracion) {
+                this.velocidad += aceleracion;
+            }
+
+            frenar(frenado) {
+                this.velocidad -= frenado;
+            }
+
+            imprimir() {
+                return JSON.stringify(this, null, 2);
+            }
+
+        }
+
+        // Extends hace que la clase herede tanto los atributos como los metodos
+        class Moto extends Vehiculo {
+            // Atributo propio
+            Rudeas = 2;
+
+            // Super aqui es el constructor del padre
+            constructor(modelo, precio) {
+                super(modelo, precio);
+            }
+        }
+
+        
+        class Coche extends Vehiculo {
+            Rudeas = 4;
+            constructor(modelo, precio) {
+                super(modelo, precio);
+            }
+        }
+
+
+        function iniciar() {
+
+            // Creamos objetos de las clases hijos
+            let motoAlfonso = new Moto("Piaggio Zip", 600);
+            let cocheMJose = new Coche("Nissan Micra", 8000);
+            motoAlfonso.acelerar(50);
+            cocheMJose.acelerar(100);
+
+            cocheMJose.frenar(80);
+
+            alert(`Moto Alfonso : \n ${JSON.stringify(motoAlfonso, null,2)}`);
+            alert(`Coche MJ: \n ${JSON.stringify(cocheMJose, null,2)}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-outline-danger m-5"
+                style="box-sizing: border-box; width: 90%; height: 60px;" onclick="iniciar()">INICIAR</button>
+        </form>
+    </main>
+</body>
+
+</html>

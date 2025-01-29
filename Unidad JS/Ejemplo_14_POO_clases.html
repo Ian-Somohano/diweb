@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="prueba.js"></script>
+
+    <script>
+        // Las clases son los modelo parar crear objetos
+        // por convencion la clase empieza en mayúscula
+
+        // Creamos la clase Camion
+
+        class Camion {
+            // Defino los atributos
+            modelo = "";
+            potencia = 0;
+            electrico = true;
+            precio = 118000.55;
+
+            // Ahora definimos los metodos
+
+            // El primero siempre es el constructor que nos permite usar el modelo parar crear unosvos objetos con esta clase
+            constructor(modelo, nuevaPotencia) {
+                this.modelo = modelo;
+                this.potencia = nuevaPotencia;
+            }
+
+            // Metodo normal
+            hacerDescuento(porcentaje) {
+                let midescuento = this.precio * porcentaje / 100;
+                // this.precio =  this.precio - midescuento;
+                this.precio -= midescuento;
+            }
+        }
+
+        /* Iniciar */
+        function iniciar() {
+
+            let camion1 = new Camion("Volvo HR Aero", 360);
+            let camion2 = new Camion("Volvo HR Electric", 540);
+
+            // El HR ESTA DE OFERTA!!!
+            camion2.hacerDescuento(5);
+
+            // Ahora pintamos los camiones
+            
+            alert(`Camión 1: \n ${JSON.stringify(camion1, null,2)}`);
+            alert(`Camión 2: \n ${JSON.stringify(camion2, null,2)}`);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-outline-danger m-5"
+                style="box-sizing: border-box; width: 90%; height: 60px;" onclick="iniciar()">INICIAR</button>
+        </form>
+    </main>
+</body>
+
+</html>
