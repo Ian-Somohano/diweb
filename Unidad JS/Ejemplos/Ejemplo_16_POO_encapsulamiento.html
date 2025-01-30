@@ -71,7 +71,7 @@
 
             // Metodo publico para imprimir
             imprimir() {
-                let datos = JSON.parse(super.imprimir);
+                let datos = JSON.parse(super.imprimir());
                 // Añado mi propio atributo y le pongo el nombre que quiero
                 datos.sonidoPerro = this.#sonido;
 

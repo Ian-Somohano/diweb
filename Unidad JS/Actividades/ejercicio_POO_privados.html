@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+
+    <script>
+        /*
+           +----------------+
+            |   Persona      |
+            +----------------+
+            | - nombre: str  |
+            | - edad: int    |
+            | - ciudad: str  |
+            +----------------+
+            | + imprimir(): str |
+            +----------------+
+                    ▲
+                    │
+   ---------------------------------
+   |                               |
++------------+                +------------+
+|   Alumno   |                |  Profesor  |
++------------+                +------------+
+| - curso: str  |             | - materia: str  |
+| - nota: float |             | - salario: float |
++------------+                +------------+
+| + imprimir(): str |         | + imprimir(): str |
++------------+                +------------+ 
+        */
+
+        class Persona {
+            #nombre = "";
+            #edad = 0;
+            #ciudad = "";
+
+            constructor(nombre, edad, ciudad) {
+                this.#nombre = nombre;
+                this.edad = edad;
+                this.#ciudad = ciudad;
+            }
+
+            imprimir() {
+                return JSON.stringify(this, null, 2);
+            }
+
+            set edad(edad) {
+                if (edad > 0) {
+                    this.#edad = edad;
+                }
+            }
+
+            // El getter (es público)
+            get edad() {
+                return this.#edad;
+            }
+
+            #mostrarInfo() {
+                // Construllo mi propio JSON
+                return {
+                    Nombre: this.#nombre,
+                    Edad: this.edad,
+                    Ciudad: this.#ciudad,
+                    // Ademas devuelvo el tipo de animal
+                    Tipo: this.constructor.name
+                }
+
+            }
+            imprimir() {
+                return JSON.stringify(this.#mostrarInfo())
+            }
+        }
+
+        class Alumno extends Persona {
+            #curso = "";
+            #nota = 0.0;
+
+            constructor(nombre, edad, ciudad, curso, nota) {
+                super(nombre, edad, ciudad);
+                this.#curso = curso;
+                this.nota = nota;
+            }
+
+            set nota(nota) {
+                if (nota > 0) {
+                    this.#nota = nota;
+                }
+            }
+
+            // El getter (es público)
+            get nota() {
+                return this.#nota;
+            }
+
+            imprimir() {
+                let datos = JSON.parse(super.imprimir());
+                // Añado mi propio atributo y le pongo el nombre que quiero
+                datos.curso = this.#curso;
+                datos.nota = this.#nota;
+
+                return JSON.stringify(datos, null, 2);
+            }
+        }
+
+        class Profesor extends Persona {
+            #materia = "";
+            #salario = 0.0;
+
+            constructor(nombre, edad, ciudad, materia, salario) {
+                super(nombre, edad, ciudad);
+                this.#materia = materia;
+                this.salario = salario;
+            }
+
+            set salario(salario) {
+                if (salario > 0) {
+                    this.#salario = salario;
+                }
+            }
+
+            // El getter (es público)
+            get salario() {
+                return this.#salario;
+            }
+
+            imprimir() {
+                let datos = JSON.parse(super.imprimir());
+                // Añado mi propio atributo y le pongo el nombre que quiero
+                datos.materia = this.#materia;
+                datos.salario = this.#salario;
+
+                return JSON.stringify(datos, null, 2);
+            }
+        }
+
+        function iniciar() {
+            let alumno1 = new Alumno("Ian", 21, "Sevilla", "JS", 10);
+            let profesor = new Profesor("Ivan", 48, "Sevilla", "JS", 2500);
+
+            alert(alumno1.imprimir());
+            alert(profesor.imprimir());
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-info m-5" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="iniciar()">INICIAR</button>
+        </form>
+    </main>
+</body>
+
+</html>
