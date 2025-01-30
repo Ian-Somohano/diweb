@@ -9,11 +9,39 @@
 
     <script>
         // Encapsulamiento: hacer privados atributos y metodos. Para acceder usaremos setters y getters
+
+        // Clase padre
+        class Animal {
+            // Atributos privados. Utilizamos #
+            #raza = "";
+            #edad = 0;
+
+            // Constructor
+            constructor (raza, edad) {
+                this.#raza = raza;
+                this.#edad = edad;
+            }
+
+            // Método privado
+            #mostrarInfo() {
+                // Construllo mi propio JSON
+                return {
+                    Raza: this.#raza,
+                    Edad: this.#edad,
+                }
+                alert(`Datos: \n ${JSON.stringify(this,null,2)}`);
+            }
+        }
        
         // Función principal
         function iniciar() {
-            alert(`Datos: \n ${JSON.stringify(cocheMJose, null,2)}`);
+            let animal1 = new Animal("perro", 10);
+
+            alert(animal1);
+
         }
+
+    
 
     </script>
 </head>
