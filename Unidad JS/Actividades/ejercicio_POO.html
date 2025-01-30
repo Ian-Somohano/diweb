@@ -63,9 +63,10 @@
             materia = "";
             salario = 0.0;
 
-            constructor(nombre, edad, ciudad) {
+            constructor(nombre, edad, ciudad, materia, salario) {
                 super(nombre,edad,ciudad);
-                
+                this.materia = materia;
+                this.salario = salario;
             }
         }
 
@@ -81,7 +82,7 @@
     <main>
         <form action="#" method="post" class="form">
 
-            <button type="submit" class="btn btn-outline-danger m-5"
+            <button type="submit" class="btn btn-info m-5"
                 style="box-sizing: border-box; width: 90%; height: 60px;" onclick="iniciar()">INICIAR</button>
         </form>
     </main>
