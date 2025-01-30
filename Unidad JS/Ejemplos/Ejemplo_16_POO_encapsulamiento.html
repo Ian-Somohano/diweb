@@ -19,6 +19,7 @@
             // Constructor (simepre es público)
             constructor(raza, edad) {
                 this.#raza = raza;
+
                 //this.edad(edad); OJO ESTO ES EN JAVA Y PHP
                 // En JS usar el setter es como poner un atributo
                 this.edad = edad;
@@ -83,6 +84,10 @@
             let paco = new Perro("Galgo Enano", 1);
 
             alert(paco.imprimir());
+            
+            // Si intento cambiar los atributos pribados en el script principal no me cambia nada
+            // paco.raza = "Mastin";
+            // alert(paco.imprimir());
         }
 
     </script>
