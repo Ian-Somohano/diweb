@@ -16,10 +16,12 @@
             #raza = "";
             #edad = 0;
 
-            // Constructor
-            constructor (raza, edad) {
+            // Constructor (simepre es público)
+            constructor(raza, edad) {
                 this.#raza = raza;
-                this.#edad = edad;
+                //this.edad(edad); OJO ESTO ES EN JAVA Y PHP
+                // En JS usar el setter es como poner un atributo
+                this.edad = edad;
             }
 
             // Método privado
@@ -27,21 +29,61 @@
                 // Construllo mi propio JSON
                 return {
                     Raza: this.#raza,
-                    Edad: this.#edad,
+                    Edad: this.edad,
+                    // Ademas devuelvo el tipo de animal
+                    Tipo: this.constructor.name
                 }
-                alert(`Datos: \n ${JSON.stringify(this,null,2)}`);
+
+            }
+
+            // Defino los setter y getters, SON PUBLICOS!!
+            // No es obligatorio hacerlo para todo
+
+            set edad(edad) {
+                if (edad > 0) {
+                    this.#edad = edad;
+                }
+            }
+
+            // El getter (es público)
+            get edad() {
+                return this.#edad;
+            }
+
+            // Hacemos la salida pero publica
+            imprimir() {
+                return JSON.stringify(this.#mostrarInfo())
+            }
+
+        }
+
+        // Clase Hijo
+        class Perro extends Animal {
+            // Atributos propios
+            #sonido = "";
+
+            constructor(raza, edad) {
+                super(raza, edad);
+
+                this.#sonido = "GUAO!!";
+            }
+
+            // Metodo publico para imprimir
+            imprimir() {
+                let datos = JSON.parse(super.imprimir);
+                // Añado mi propio atributo y le pongo el nombre que quiero
+                datos.sonidoPerro = this.#sonido;
+
+                return JSON.stringify(datos, null, 2);
             }
         }
-       
+
         // Función principal
         function iniciar() {
-            let animal1 = new Animal("perro", 10);
+            let paco = new Perro("Galgo Enano", 1);
 
-            alert(animal1);
-
+            alert(paco.imprimir());
         }
-
-    
 
     </script>
 </head>
