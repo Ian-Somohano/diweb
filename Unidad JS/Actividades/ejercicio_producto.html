@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---- JS ----</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <!-- <script src="ejercicio.js"></script> -->
+
+    <script>
+        /*
+        Crea un objeto que represente a un producto a la venta que tenga por nombre 
+        
+        “Auriculares BT”, precio 23 € y con stock de 44 unidades. 
+        
+        A continuación, imprímelo en la consola.Añade un método llamado importeEnStock() que devuelva el 
+        producto del precio por lasunidades en stock. Invócalo y muestra el resultado en la consola.
+        
+        Ahora debes decrementar las unidades en stock tres veces y subirle el precio un 5%.
+        
+        Vuelve a invocar al método importeEnStock() e imprime el resultado en la consola.   
+        */
+
+        class Producto {
+            nombre = "";
+            precio = 0.0;
+            stock = 0;
+
+            constructor(nombre, precio, stock) {
+                this.nombre = nombre;
+                this.precio = precio;
+                this.stock = stock;
+            }
+
+            importeEnStock() {
+                let valorStock = this.stock * this.precio;
+
+                alert(`El importe en stock es: ${valorStock}`)
+            }
+
+            restarStock(cantidad) {
+                this.stock = this.stock - cantidad
+            }
+
+            subirPrecio(porcentaje) {
+                let descuento = this.precio * porcentaje / 100;
+                this.precio -= descuento;
+            }
+
+
+
+        }
+
+        function iniciar() {
+            let producto1 = new Producto("Auriculares BT", 23, 44);
+
+            alert(`Producto 1 : \n ${JSON.stringify(producto1, null, 2)}`);
+
+            producto1.importeEnStock();
+
+            producto1.restarStock(3)
+            producto1.subirPrecio(50);
+            producto1.importeEnStock();
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-info m-5" style="box-sizing: border-box; width: 90%; height: 60px;"
+                onclick="iniciar()">INICIAR</button>
+        </form>
+    </main>
+</body>
+
+</html>
