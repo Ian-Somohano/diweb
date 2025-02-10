@@ -58,7 +58,7 @@
                 return this.#edad;
             }
 
-            #mostrarInfo() {
+            _mostrarInfo() {
                 // Construllo mi propio JSON
                 return {
                     Nombre: this.#nombre,
@@ -69,8 +69,9 @@
                 }
 
             }
+
             imprimir() {
-                return JSON.stringify(this.#mostrarInfo())
+                return JSON.stringify(this._mostrarInfo())
             }
         }
 
@@ -95,13 +96,28 @@
                 return this.#nota;
             }
 
-            imprimir() {
-                let datos = JSON.parse(super.imprimir());
-                // Añado mi propio atributo y le pongo el nombre que quiero
-                datos.curso = this.#curso;
-                datos.nota = this.#nota;
+            // Metodo privado
+            #mostrar() {
+                // Construllo mi propio JSON
+                return {
+                    ...super._mostrarInfo(),
+                    Curso : this.#curso,
+                    Nota : this.#nota
+                }
+            }
 
-                return JSON.stringify(datos, null, 2);
+            
+
+            imprimir() {
+                // let datos = JSON.parse(super.imprimir());
+                // // Añado mi propio atributo y le pongo el nombre que quiero
+                // datos.curso = this.#curso;
+                // datos.nota = this.#nota;
+
+                // return JSON.stringify(datos, null, 2);
+                
+                return JSON.stringify(this.#mostrar(), null, 2);
+
             }
         }
 
@@ -143,6 +159,9 @@
             alert(alumno1.imprimir());
             alert(profesor.imprimir());
         }
+
+        // Private -> # no se puede ver fuera de la clase
+        // Protectec -> _ es privado menos para los hijos, que es publico
     </script>
 </head>
 
