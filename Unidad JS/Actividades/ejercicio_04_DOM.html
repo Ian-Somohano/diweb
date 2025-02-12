@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            background-color: #c0c0c0;
+        }
+
+        body * {
+            margin: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            height: 60px;
+            font-size: 1.4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            font-weight: 600;
+            box-shadow: 5px 5px 7px 1px gray;
+            margin-top: 0.2rem;
+        }
+
+        .tag {
+            border: 1px solid gray;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 1px gray;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tag">
+        <h1 id="titular">Título 1</h1>
+
+        <section id="contenedor">
+            <p id="principal">Párrafo principal</p>
+
+            <p class="secundario">Este es el primer párrafo secundario</p>
+            <p class="secundario">Este es el segundo párrafo secundario</p>
+            <p class="secundario">Este es el tercer párrafo secundario</p>
+        </section>
+
+        <section>
+            <p>Volumen Prisma</p>
+            Base: <input type="number" name="base" id="base"> <br>
+            Altura: <input type="number" name="altura" id="altura"> <br>
+            Color: <input type="color" name="color" id="color"> <br>
+        </section>
+    </div>
+
+    <!-- Para trabajar con el DOM tiene que estar toda la estructura cargada -->
+    <script>
+
+        function imprimeH1() {
+            let h1 = document.getElementById("titular").textContent;
+            alert(h1);
+            console.log(document.querySelector("#principal").textContent);
+        }
+
+        function imprimeParrafos() {
+            let parrafos = document.getElementsByTagName("p");
+            let cadena = "";
+
+            // parrafos.forEach(parrafo => {
+            // });
+
+            for (const p of parrafos) {
+                cadena += p.textContent + "\n";
+            }
+
+            alert(cadena);
+
+        }
+
+        function volumenPrisma() {
+            let base = document.querySelector("#base").value;
+            let altura = document.querySelector("#altura").value;
+
+            alert(`El volumen del prisma es ${base * altura}`);
+
+            base = parseInt(prompt("¿Cúal es la base?"));
+            altura = parseInt(prompt("¿Cúal es la altura?"))
+
+            alert(`El volumen del prisma es ${base * altura}`);
+        }
+
+        function agregaParrafo() {
+            let parrafo = prompt("Dame un texto");
+            let p = document.createElement("p");
+            p.textContent = parrafo;
+
+            let section = document.querySelector("#contenedor");
+
+            section.appendChild(p);
+
+        }
+
+        function quitaParrafo() {
+            let parrafo = parseInt(prompt("¿Qué párrafo quieres eliminar 1-4?"));
+            let parrafos = document.querySelectorAll("p");
+
+            parrafos[parrafo - 1].parentNode.removeChild(parrafos[parrafo - 1]);
+        }
+
+        function cambiaFondo() {
+            let rgb = document.getElementById("color").value;
+            document.body.style.backgroundColor = rgb;
+        }
+
+        function principal() {
+            let cadena = `Elige una opción:
+            -----------------
+            1.Imprime H1
+            2.Imprime parrafos
+            3.Volumen prisma
+            4.Añadir párrafo
+            5.Eliminar párrafo
+            6.Cambiar fondo
+            7.Salir
+            -----------------`;
+            let opcion = parseInt(prompt(cadena));
+
+            switch (opcion) {
+                case 1:
+                    imprimeH1()
+                    break
+                case 2:
+                    imprimeParrafos()
+                    break
+                case 3:
+                    volumenPrisma()
+                    break
+                case 4:
+                    agregaParrafo()
+                    break
+                case 5:
+                    quitaParrafo()
+                    break
+                case 6:
+                    cambiaFondo()
+                    break
+                default:
+                    alert("Fin del programa")
+                    break
+            }
+        }
+    </script>
+
+    <button type="submit" onclick="principal()" class="btn btn-success">Iniciar</button>
+</body>
+
+</html>
