@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro de Examen</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+
+    <style>
+        form {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            width: 90vw;
+            height: 60px;
+            font-size: 1.4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            font-weight: 600;
+            box-shadow: 5px 5px 7px 1px gray;
+            margin-top: 2rem;
+        }
+    </style>
+
+    <script>
+        // Clases
+        class Coche {
+            modelo = "";
+            bateria = 40;
+            velocidad = 0;
+
+            constructor(modelo) {
+                this.modelo = modelo;
+            }
+
+            acelerar(velocidad) {
+                this.velocidad = this.velocidad + velocidad;
+
+                if (velocidad > 10 && velocidad < 30) {
+                    this.bateria = this.bateria * 0.99;
+                } else if (velocidad > 30 && velocidad < 50) {
+                    this.bateria = this.bateria * 0.98;
+                }
+            }
+
+            frenar(velocidad) {
+                this.velocidad = this.velocidad - velocidad;
+                if (velocidad >= 10 && velocidad <= 30) {
+                    this.bateria = this.bateria * 1.005;
+                } else if (velocidad >= 30 && velocidad <= 50) {
+                    this.bateria = this.bateria * 1.01;
+                }
+            }
+        }
+
+
+        // Función nomina
+        function nomina() {
+            let bruto = parseFloat(prompt("¿Cúal es tu sueldo bruto anual?"));
+            let brutoMes = bruto / 12;
+            let irpf = 0;
+            if (bruto > 10000 && bruto < 20000) {
+                irpf = 15;
+            } else if (bruto > 20000 && bruto < 30000) {
+                irpf = 25;
+            } else if (bruto > 30000 && bruto < 40000) {
+                irpf = 35;
+            }
+
+            let netoMes = brutoMes - (brutoMes * irpf / 100) - (brutoMes * 0.064);
+
+            return parseInt(netoMes);
+        }
+
+        // Función Crear Coche
+        function crearCoche() {
+            let miKona = new Coche("Hyundai Kona");
+
+            alert(JSON.stringify(miKona, null, 2));
+
+            miKona.acelerar(35);
+            alert(JSON.stringify(miKona, null, 2));
+
+            miKona.frenar(20);
+            alert(JSON.stringify(miKona, null, 2));
+
+        }
+
+        //  Función Ecuacion 2º Grado
+        function ec2Grado(a, b, c) {
+            // Ej : x² - 5x + 6 = 0
+            // Soluciones x1=2 y x2=3
+
+            let discriminante = (b * b) - (4 * a * c);
+            let x1 = 0;
+            let x2 = 0;
+
+            if (discriminante >= 0) {
+                x1 = (-b + (Math.sqrt(discriminante))) / (2 * a);
+                x2 = (-b - (Math.sqrt(discriminante))) / (2 * a);
+
+                alert(`Soluciones:
+                X1 = ${x1}
+                X2 = ${x2}`);
+            } else {
+                alert("No tiene solución")
+            }
+        }
+
+        // Función Tablas multiplicar
+        function tablasMultiplicar(x, y) {
+            // let validador = y - x;
+
+            // if (validador >= 3) {
+            //     for (let i = 0; i < array.length; i++) {
+            //         const element = array[index];
+
+            //     }
+            // } else 
+        }
+
+
+        // funcion menu
+        function menu() {
+            let menu = `Elige una opción:
+            1.Calcular Nómina
+            2.Crear Coche
+            3.Ecuaciones 2º Grado
+            4.Tablas de Multiplicar
+            5.Salir`
+
+            let opcion = 0;
+
+            while (opcion < 5) {
+                opcion = parseInt(prompt(menu));
+
+                switch (opcion) {
+                    case 1:
+                        alert(`${nomina()} € Netos / Mes`);
+                        break
+                    case 2:
+                        crearCoche();
+                        break
+                    case 3:
+                        let a = parseInt(prompt("Dame el valor de A"));
+                        let b = parseInt(prompt("Dame el valor de B"));
+                        let c = parseInt(prompt("Dame el valor de C"));
+                        ec2Grado(a, b, c);
+                        break
+                    case 4:
+                        tablasMultiplicar();
+                        break
+                    case 5:
+                        alert("Fin del programa");
+                        break
+                }
+            }
+
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-success" onclick="menu()">Menu</button>
+        </form>
+    </main>
+</body>
+
+</html>
