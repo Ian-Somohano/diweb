@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <title>Boletín JS</title>
+
+    <style>
+        body>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .btn {
+            width: 90vw;
+            height: 60px;
+            font-size: 1.4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            font-weight: 600;
+            box-shadow: 5px 5px 7px 1px gray;
+        }
+    </style>
+
+    <script>
+        function menuCalculin() {
+            let cadena = `Elige una opción:
+            -----------------
+            1.Calcular cuadrado
+            2.Calcular el 20%
+            3.Calcular potencia
+            4.Salir
+            -----------------`
+            return parseInt(prompt(cadena))
+        }
+
+        function holaMundo(veces) {
+            // Con Entrada - Con Salida
+            let cadena = "";
+
+            for (let i = 1; i <= veces; i++) {
+                cadena += `Hola mundo \n`;
+            }
+
+            return cadena;
+        }
+
+        function multiplicarN() {
+            // Sin Entrada - Con Salida
+            let num = parseInt(prompt("¿De qué número quieres la tabla?"))
+            let mensaje = "";
+
+            for (let i = 1; i <= 10; i++) {
+                mensaje += `${num} x ${i} = ${num * i} \n`;
+            }
+
+            return mensaje;
+        }
+
+        function nombrar() {
+            // Sin Entrada - Sin Salida
+            let nombre = prompt("¿Cúal es tu nombre?")
+            let apellido1 = prompt("¿Cúal es tu primer apellido?")
+            let apellido2 = prompt("¿Cúal es tu segundo apellido?")
+
+
+            alert(`Hola ${nombre} ${apellido1} ${apellido2}`)
+        }
+
+        function calculin(opcion) {
+            // Con Entrada - Sin Salida
+            switch (opcion) {
+                case 1:
+                    let num1 = parseInt(prompt("Dame un número"));
+                    alert(`El cuadrado de ${num1} es: ${num1 * num1}`);
+                    break;
+
+                case 2:
+                    let num2 = parseInt(prompt("Dame un número"));
+                    alert(`El 20% de ${num2} es: ${num2 * 0.2}`);
+                    break;
+                case 3:
+                    let base = parseInt(prompt("Dame base"));
+                    let exponente = parseInt(prompt("Dame exponete"));
+                    let resultado = base;
+
+                    for (let i = 1; i < exponente; i++) {
+                        // resultado = resultado * base
+                        resultado *= base;
+                    }
+
+                    alert(`${base} elevado a ${exponente}  es: ${resultado}`);
+                    break;
+                default:
+                    alert("Aqui acaba calculin")
+                    break;
+            }
+        }
+
+        // -------------------------
+
+        function menu() {
+            let cadena = ` Elige una opción:
+            -----------------
+            1.Hola Mundo x N
+            2.Tabla multiplicar N
+            3.Dime tu nombre
+            4.Calculín
+            5.Salir
+            -----------------`
+            return parseInt(prompt(cadena))
+        }
+
+        function principal() {
+            let opcion = 0;
+            while (opcion < 5) {
+                opcion = menu();
+                switch (opcion) {
+                    case 1:
+                        let veces = 0;
+                        while (veces < 1 || veces > 20) {
+                            veces = parseInt(prompt("Dime veces (1-20)"));
+                        }
+                        alert(holaMundo(veces));
+                        break;
+
+                    case 2:
+
+                        alert(multiplicarN());
+                        break;
+
+                    case 3:
+
+                        nombrar();
+                        break;
+
+                    case 4:
+                        let opcion_calculin = menuCalculin();
+
+                        if (opcion_calculin > 0 || opcion_calculin < 4) {
+                            calculin(opcion_calculin);
+                        }
+
+                        break;
+                    default:
+                        alert("FIN DEL PROGRAMA");
+                        break;
+                }
+            }
+
+        }       
+    </script>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <button class="btn btn-warning m-4" type="submit" onclick="principal()">Iniciar</button>
+
+    </form>
+
+
+</body>
+
+</html>
