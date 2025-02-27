@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
     Nombre VARCHAR(30) NOT NULL,
     Autonomo BOOLEAN NOT NULL,
     Nif_cif INT NOT NULL,
-    PRIMARY KEY pk_usuarios(Correo),
+    PRIMARY KEY pk_usuarios(Nif_cif),
     INDEX idx_usuarios(Nombre)
 ) ENGINE = innodb 
-COMMENT = "Tabla clubes: ENGINE Motor BBDD";
+COMMENT = "Tabla usuarios: ENGINE Motor BBDD";
