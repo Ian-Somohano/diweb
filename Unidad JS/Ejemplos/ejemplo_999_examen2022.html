@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro de Examen</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+
+    <style>
+        form {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            width: 90vw;
+            height: 60px;
+            font-size: 1.4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            font-weight: 600;
+            box-shadow: 5px 5px 7px 1px gray;
+            margin-top: 2rem;
+        }
+    </style>
+
+    <script>
+       
+        // ----------------------------
+        class Reservas {
+            cliente = "";
+            entrada = "2024-03-04";
+            #dias = 3;
+
+            constructor(cliente) {
+                this.cliente = cliente;
+            }
+
+            set dias(dias) {
+                if (dias > 1) {
+                    this.#dias = dias;
+                }
+            }
+
+            get dias() {
+                return this.#dias;
+            }
+
+            static leerReserva() {
+                let cliente = prompt("¿Como te llamas?");
+                let reserva = new Reservas(cliente);
+
+                return reserva;
+            }
+
+            static imprimeReserva(reserva) {
+                return (JSON.stringify({
+                    Cliente: factura.cliente,
+                    Entrada: factura.entrada,
+                    Dias: `${factura.dias} dias`
+                }, null, 2));
+            }
+        }
+
+        class Facturas extends Reservas {
+            importe = 100.00;
+            spa = false;
+
+            constructor(cliente, importe, spa) {
+                super(cliente);
+                this.importe = importe;
+                this.spa = spa;
+
+                // if (spa === true) {
+                //     importe += 40;
+                // }
+            }
+
+            static descuento(porcentaje) {
+                this.importe -= this.importe * porcentaje / 100;
+            }
+
+            static leerFactura() {
+                let cliente = prompt("Dime tu nombre")
+                let importe = parseFloat(prompt("Dime importe"))
+                let spa = confirm("¿Quieres spa?");
+
+                let factura = new Facturas(cliente, importe, spa)
+
+                return factura;
+            }
+
+            static imprimeFactura(factura) {
+                // Creo un JSON propio, empezando por el de mi padre
+                let miJSON = JSON.parse(super.imprimeReserva());
+
+                // Meto en ese JSON mis campos...
+                miJSON.importe = factura.importe;
+                miJSON.spa = factura.spa;
+
+                // Devuelvo el JSON personalizado
+                return (JSON.stringify(miJSON, null, 2));
+            }
+        }
+
+        function reserva(cliente) {
+            // Parámetro de entrada: Cliente
+            let importe = parseFloat(prompt("Dame importe"))
+            let spa = confirm("Desea SPA?");
+
+            // Salida: Factura
+            alert(Facturas.imprimeFactura());
+
+        //      cliente = prompt("¿Como te llamas?")
+        //      importe = parseFloat(prompt("Dame importe"))
+        //      spa = confirm("Desea SPA?");
+
+        //     let prueba = new Facturas(cliente,importe,spa);
+
+        //    alert(prueba.imprimeFactura());
+        }
+
+
+        // ----------------------------
+        // funcion menu
+        function menu() {
+            let menu = `Elige una opción:
+            
+            2.Reserva`
+
+            let opcion = 0;
+
+            while (opcion < 6) {
+                opcion = parseInt(prompt(menu));
+
+                switch (opcion) {
+                
+                    case 2:
+                       alert(reserva("Ian"));
+                        break
+                        alert("Fin del programa");
+                        break
+                }
+            }
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post" class="form">
+
+            <button type="submit" class="btn btn-success" onclick="menu()">Menu</button>
+        </form>
+    </main>
+</body>
+
+</html>

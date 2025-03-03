@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulacro de Examen</title>
-    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
-
-    <style>
-        form {
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn {
-            width: 90vw;
-            height: 60px;
-            font-size: 1.4rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-variant: small-caps;
-            font-weight: 600;
-            box-shadow: 5px 5px 7px 1px gray;
-            margin-top: 2rem;
-        }
-    </style>
-
-    <script>
         // ----------------------------
 
         class EntradaFutbol {
@@ -49,6 +20,7 @@
 
             get precio() {
                 return this.#precio;
+            
             }
 
             // Si los metodos son static, no hay que crear un objeto de la clase para USARLOS
@@ -85,7 +57,6 @@
             entrada1.partidoUEFA();
             EntradaFutbol.mostrarEnt(entrada1);
         }
-
         // ----------------------------
         class Reservas {
             cliente = "";
@@ -116,9 +87,9 @@
 
             static imprimeReserva(reserva) {
                 return (JSON.stringify({
-                    Cliente: reserva.cliente,
-                    Entrada: reserva.entrada,
-                    Dias: `${reserva.dias} dias`
+                    Cliente: this.cliente,
+                    Entrada: this.entrada,
+                    Dias: `${this.dias} dias`
                 }, null, 2));
             }
         }
@@ -151,13 +122,13 @@
                 return factura;
             }
 
-            imprimeFactura(factura) {
+            static imprimeFactura(factura) {
                 // Creo un JSON propio, empezando por el de mi padre
                 let miJSON = JSON.parse(super.imprimeReserva());
 
                 // Meto en ese JSON mis campos...
-                miJSON.importe = factura.importe;
-                miJSON.spa = factura.spa;
+                miJSON.importe = this.importe;
+                miJSON.spa = this.spa;
 
                 // Devuelvo el JSON personalizado
                 return (JSON.stringify(miJSON, null, 2));
@@ -272,17 +243,3 @@
 
 
         }
-    </script>
-
-</head>
-
-<body>
-    <main>
-        <form action="#" method="post" class="form">
-
-            <button type="submit" class="btn btn-warning" onclick="menu()">Menu</button>
-        </form>
-    </main>
-</body>
-
-</html>

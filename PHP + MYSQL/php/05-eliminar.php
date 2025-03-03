@@ -12,7 +12,7 @@ $alerta = "Mensaje...";
 // Lamamos a la base de datos
 $conexion = conectarBBDD();
 
-// Si sel pulsa Si se envia la referencia
+// Si se pulsa Si se envia la referencia
 if (isset($_REQUEST['eliminar'])) {
     $eliminarSLQ = "DELETE FROM productos WHERE Referencia = $_REQUEST[Referencia]";
     // Desactivo las excepciones por errores en el driver mysqli
